@@ -107,7 +107,7 @@ def getDataset():
 
 
 def RFCModel(vectorised_data, target):
-    print("SVM model is called ")
+    print("Random Forest model is called ")
 
     split_point = int(len(vectorised_data) * .7)
     print('Split Point ', split_point)
@@ -127,8 +127,6 @@ def RFCModel(vectorised_data, target):
     x_train = pad_trunc(x_train, maxlen)
     x_test = pad_trunc(x_test, maxlen)
 
-
-
     nsamples, nx, ny = array(x_train).shape
     print("x_train shapes :", nsamples, nx, ny)
     x_train = np.reshape(x_train, (nsamples, nx * ny))
@@ -146,7 +144,7 @@ def RFCModel(vectorised_data, target):
     print("Number of Outliners :", n_outliers)
     # create SVM model
 
-    rfcmodel = RandomForestClassifier(max_depth=50, random_state=0)
+    rfcmodel = RandomForestClassifier(max_depth=1, criterion= "entropy", random_state=0)
     rfcmodel.fit(x_train, y_train)
 
     pred = rfcmodel.predict(x_test)
