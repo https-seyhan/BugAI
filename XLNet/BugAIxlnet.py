@@ -5,6 +5,9 @@ Created on Thu Mar 5 20:54:06 2020
 
 @author: saul
 """
+# Bug prediction of Software codes using Advanced Deep Learning XLNet model.
+# The aim is to build a AI model of software bug prediction using XLNet.
+
 import os
 import pandas as pd
 import math
