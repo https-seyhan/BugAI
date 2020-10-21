@@ -22,6 +22,7 @@ from sklearn.utils import compute_class_weight
 #This model uses keras for LSTM modelling.
 #sklearn is used to train the model with x fold cross validation and measure the accuracy of the LSTM model.
 
+#LSTM Hyperparameters
 maxlen = 5 #400 # number of words in a row. Input words.
 batch_size = 32 #32 #32
 embedding_dims = 5 #300 #5 #300
