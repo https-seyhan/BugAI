@@ -19,6 +19,7 @@ from sklearn.utils import compute_class_weight
 #the objective iof this model is to predict if there is critical bug in a given AST code using LSTM
 #This model does not use pre-trainined embeddings since there is no tra-preined weight vectors are available.
 #Therefore, embedding modules is excluded in the LSTM architecture.
+#This model uses keras for LSTM modelling.
 
 maxlen = 5 #400 # number of words in a row. Input words.
 batch_size = 32 #32 #32
