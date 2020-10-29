@@ -35,7 +35,6 @@ print(len(data_file_address))
 df_data = pd.read_csv(data_file_address,sep=",",encoding="utf-8")
 print(len(df_data))
 
-df_data.columns
 
 df_data.criticalBugs.head(n=2)
 
