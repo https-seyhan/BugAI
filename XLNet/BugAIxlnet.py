@@ -23,6 +23,7 @@ from torch.utils.data import TensorDataset, DataLoader, RandomSampler, Sequentia
 from sklearn.model_selection import train_test_split
 import torch.nn.functional as F
 
+#Pytorch XLNet module
 from pytorch_transformers import (XLNetConfig, XLNetForSequenceClassification, XLNetTokenizer)
 
 os.chdir('/home/saul/bugpred')
