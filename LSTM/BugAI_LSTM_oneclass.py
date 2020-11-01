@@ -5,7 +5,7 @@ from sklearn.metrics import confusion_matrix, accuracy_score, classification_rep
 import numpy as np
 from random import shuffle, sample
 import datetime
-from gensim.models import Word2Vec
+from gensim.models import Word2Vec #convert string to vector
 import pandas as pd
 import numpy as np
 from random import shuffle, sample
