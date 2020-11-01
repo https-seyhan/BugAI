@@ -7,7 +7,6 @@ Created on Thu Oct 29 20:54:06 2020
 """
 # Bug prediction of Software codes using Advanced Deep Learning XLNet model.
 # The aim is to build a AI model of software bug prediction using XLNet.
-# This XLNet model also uses CBOW in converting text to vector.
 
 import os
 import pandas as pd
