@@ -7,6 +7,7 @@ Created on Thu Oct 29 20:54:06 2020
 """
 # Bug prediction of Software codes using Advanced Deep Learning XLNet model.
 # The aim is to build a AI model of software bug prediction using XLNet.
+# This XLNet model also uses CBOW in converting text to vector.
 
 import os
 import pandas as pd
@@ -225,11 +226,7 @@ val_masks = torch.tensor(val_masks)
 tr_segs = torch.tensor(tr_segs)
 val_segs = torch.tensor(val_segs)
 
-#Put data into data loader
-
-
-
-
+#Copy data into data loader
 
 # Set token embedding, attention embedding, segment embedding
 train_data = TensorDataset(tr_inputs, tr_masks,tr_segs, tr_tags)
