@@ -12,7 +12,7 @@ from random import shuffle, sample
 import  matplotlib.pyplot as plt
 from keras.utils import to_categorical
 
-#the objective iof this model is to predict number of bugs in a given AST code using LSTM
+#The objective if this deep learning LSTM model is to predict number of bugs in a given AST code using LSTM
 
 traindata = '/home/saul/deeplearning/aclImdb/train'
 
