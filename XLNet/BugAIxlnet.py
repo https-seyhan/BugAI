@@ -62,7 +62,7 @@ os.chdir('/home/saul/deeplearning/xlnet')
 #tag2idx = {t: i for i, t in enumerate(tags_vals)}
 
 # Recommend to set it by manual define, good for reusing
-# 0:no bug, 1: bug
+# 0:no bug, 1: bug Binary classification
 tag2idx={'0': 0,
  '1': 1}
 tag2idx
