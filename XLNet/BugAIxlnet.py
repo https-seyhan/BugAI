@@ -49,7 +49,7 @@ sentences = df_data.classname.str.replace('::', ' ').to_list()
 sentences[0]
 
 
-# Get tag labels data
+# Get tag labels data and convert to list
 labels = df_data.criticalBugs.to_list()
 print(labels[0])
 
