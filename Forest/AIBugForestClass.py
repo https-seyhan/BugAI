@@ -66,6 +66,7 @@ def convertcbow(dataset):
     # print(f'Sentences: {sentences}')
     #print("Vectorised Codes ", array(vectorised_codes).shape)
     return vectorised_codes
+
 # Append zeros to the enof the sentences if the sentences are short
 def pad_trunc(data, maxlen):
     new_data = []
