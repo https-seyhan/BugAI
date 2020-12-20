@@ -21,7 +21,7 @@ embedding_dims = 6 #300 #5 #300
 def convertcbow(dataset):
     sentences = []
     vectorised_codes = []
-    print("Cbow called")
+  
 
     # bugs = pd.read_csv('bug-metrics.csv', sep= ',')
     # print(bugs.columns)
