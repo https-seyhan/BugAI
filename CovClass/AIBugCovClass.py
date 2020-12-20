@@ -101,7 +101,7 @@ def getDataset():
     return dataset
 
 
-def SVMModel(vectorised_data, target):
+def OneClassModel(vectorised_data, target):
     print("SVM model is called ")
 
     split_point = int(len(vectorised_data) * .7)
