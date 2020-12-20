@@ -1,6 +1,6 @@
 from sklearn import svm
-from sklearn.dummy import DummyClassifier
-from sklearn.covariance import EllipticEnvelope
+from sklearn.dummy import DummyClassifier 
+from sklearn.covariance import EllipticEnvelope # An object for detecting outliers in a Gaussian distributed dataset
 from sklearn.ensemble import IsolationForest # Isolation Forest Algorithm
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
