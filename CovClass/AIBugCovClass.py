@@ -22,7 +22,6 @@ def convertcbow(dataset):
     sentences = []
     vectorised_codes = []
   
-
     # bugs = pd.read_csv('bug-metrics.csv', sep= ',')
     # print(bugs.columns)
 
