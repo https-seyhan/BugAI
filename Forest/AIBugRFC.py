@@ -22,6 +22,7 @@ def convertcbow(dataset):
     vectorised_codes = []
     print("Cbow called")
    
+    # Split line of codes by ::
     ast = [row.split('::') for row in dataset['classname']]
     # print('ASTs ', ast[:2])
     # the imput to the cbow is list of list of each line
