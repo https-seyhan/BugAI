@@ -29,7 +29,6 @@ def convertcbow(dataset):
     # input of the cbow is list of each line
     # size of the word vector of a given token must be equal to embedding_dim of the LSTM model
     cbowmodel = Word2Vec(ast, min_count=1, size=embedding_dims, workers=3, window=6, sg=0)
-    # print(ast[:2])
     print(' CBOW model ', cbowmodel)
 
     # Test cbow model
