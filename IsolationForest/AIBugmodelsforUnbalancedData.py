@@ -85,7 +85,6 @@ def collect_expected(dataset):
     for bug in bugs:
         #print(bug)
         expected.append(bug)
-
     return expected
 
 
@@ -109,7 +108,6 @@ def SVMModel(vectorised_data, target):
     #plt.show()
     x_test = vectorised_data[split_point:]
     y_test = target[split_point:]
-
 
     #make each point of data of uniform lenght
     x_train = pad_trunc(x_train, maxlen)
@@ -230,7 +228,6 @@ def CovModel(vectorised_data, target):
     x_test = vectorised_data[split_point:]
     y_test = target[split_point:]
 
-
     #make each point of data of uniform lenght
     x_train = pad_trunc(x_train, maxlen)
     x_test = pad_trunc(x_test, maxlen)
@@ -251,7 +248,6 @@ def CovModel(vectorised_data, target):
     n_outliers = int(outliers_fraction * nsamples)
     print("Number of Outliners :", n_outliers)
     # create SVM model
-
 
     covmodel = EllipticEnvelope(contamination=0.4)
     covmodel.fit(x_train, y_train)
