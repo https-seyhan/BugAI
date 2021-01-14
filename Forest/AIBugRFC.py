@@ -84,7 +84,6 @@ def getDataset():
     dataset = pd.read_csv('bug-metrics.csv', sep= ',')
     return dataset
 
-
 def RFCModel(vectorised_data, target):
     print("Random Forest model is called ")
 
