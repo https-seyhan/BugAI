@@ -175,11 +175,7 @@ def DummyModel(vectorised_data, target):
     outliers_fraction =6/300
     n_outliers = int(outliers_fraction * nsamples)
     print("Number of Outliners :", n_outliers)
-    # create SVM model
-    #svmmodel = svm.SVC(kernel='poly', degree=8)
-    #svmmodel = svm.SVC(kernel='sigmoid')
-    #svmmodel = svm.OneClassSVM(nu= outliers_fraction, kernel="sigmoid", degree=16, gamma=0.4)
-    #svmmodel.fit(x_train, y_train)
+
 
     dummyclassifier = DummyClassifier(strategy='prior', constant=1)
     dummyclassifier.fit(x_train, y_train)
