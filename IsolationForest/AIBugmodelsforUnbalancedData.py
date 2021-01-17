@@ -26,7 +26,6 @@ def convertcbow(dataset):
     # bugs = pd.read_csv('bug-metrics.csv', sep= ',')
     
     ast = [row.split('::') for row in dataset['classname']]
-    
     # the input to the cbow is list of list of each line
     cbowmodel = Word2Vec(ast, min_count=1, size=embedding_dims, workers=3, window=6, sg=0)
     
