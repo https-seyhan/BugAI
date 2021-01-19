@@ -260,6 +260,5 @@ if __name__ == '__main__':
     print(f'Vectorised Data Type {type(vectorised_data)}')
     target = collect_expected(dataset)  # Biased two classes {198, 2} lenght is 200
 
-    #SVMModel(vectorised_data,target)
-    #DummyModel(vectorised_data, target)
+   
     CovModel(vectorised_data, target)
