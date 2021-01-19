@@ -28,7 +28,6 @@ def getcbow(dataset):
 
     sentences = []
     vectorised_codes = []
-
     ast = [row.split('::') for row in dataset['classname']]
     #print('ASTs ', ast[:2])
     #the imput to the cbow is list of list of each line
