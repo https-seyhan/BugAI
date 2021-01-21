@@ -193,15 +193,6 @@ def DummyModel(vectorised_data, target):
 if __name__ == '__main__':
     print(f'Test')
 
-    # Load dataset
-    cancer = datasets.load_breast_cancer()
-
-    # print the names of the 13 features
-    #print("Features: ", cancer.feature_names)
-
-    # print the label type of cancer('malignant' 'benign')
-    #print("Labels: ", cancer.target_names)
-
     dataset = getDataset()
     vectorised_data = convertcbow(dataset)
     print(f'Vectorised Data Type {type(vectorised_data)}')
