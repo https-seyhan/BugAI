@@ -202,7 +202,6 @@ if __name__ == '__main__':
     # print the label type of cancer('malignant' 'benign')
     #print("Labels: ", cancer.target_names)
 
-
     dataset = getDataset()
     vectorised_data = convertcbow(dataset)
     print(f'Vectorised Data Type {type(vectorised_data)}')
