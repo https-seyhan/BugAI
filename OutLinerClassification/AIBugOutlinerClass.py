@@ -30,8 +30,7 @@ def convertcbow(dataset):
     cbowmodel = Word2Vec(ast, min_count=1, size=embedding_dims, workers=3, window=6, sg=0)
     print(' CBOW model ', cbowmodel)
 
-    # Test cbow model
-   
+    # Test cbow model 
     #print(cbowmodel['eclipse'])
 
     classes = dataset['classname']
