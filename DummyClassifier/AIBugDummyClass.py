@@ -191,8 +191,6 @@ def DummyModel(vectorised_data, target):
 
 
 if __name__ == '__main__':
-
-
     dataset = getDataset()
     vectorised_data = convertcbow(dataset)
     print(f'Vectorised Data Type {type(vectorised_data)}')
