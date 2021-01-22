@@ -78,7 +78,6 @@ def collect_expected(dataset):
 
     return expected
 
-
 def getDataset():
     dataset = pd.read_csv('bug-metrics.csv', sep= ',')
     return dataset
@@ -125,8 +124,6 @@ def SVMModel(vectorised_data, target):
     #svmmodel = svm.SVC(kernel='sigmoid')
     svmmodel = svm.OneClassSVM(nu= outliers_fraction, kernel="sigmoid", degree=16, gamma=0.4)
     svmmodel.fit(x_train, y_train)
-
-    dummyclassifier = DummyClassifier(strategy='constant', constant=1)
 
     pred = svmmodel.predict(x_test)
 
