@@ -45,7 +45,6 @@ def convertcbow(dataset):
                 pass
 
         vectorised_codes.append(linecode)
-
     return vectorised_codes
 
 # Append zeros to the enof the sentences if the sentences are short
