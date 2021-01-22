@@ -298,23 +298,6 @@ def ForestModel(vectorised_data, target):
     print(classification_report(y_test, pred))
 
 if __name__ == '__main__':
-    print(f'Test')
-
-    # Load dataset
-    cancer = datasets.load_breast_cancer()
-
-    # print the names of the 13 features
-    #print("Features: ", cancer.feature_names)
-
-    # print the label type of cancer('malignant' 'benign')
-    #print("Labels: ", cancer.target_names)
-
-    # print data(feature)shape
-    #print("Cancer Data Shape :", cancer.data.shape)
-    #print("Cancer Target Shape : ", cancer.target_names.shape)
-    #print(type(cancer.data))
-    #print(cancer.data[0:5])
-    #print(cancer)
 
     dataset = getDataset()
     vectorised_data = convertcbow(dataset)
