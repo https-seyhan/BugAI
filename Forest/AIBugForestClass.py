@@ -16,6 +16,9 @@ from keras.utils import to_categorical
 import seaborn as sb
 from matplotlib import pyplot as plt
 
+#The IsolationForest ‘isolates’ observations by randomly selecting a feature and then randomly selecting 
+#a split value between the maximum and minimum values of the selected feature.
+
 maxlen = 5 #400 # number of words in a row. Input words.
 embedding_dims = 6 #300 #5 #300
 
