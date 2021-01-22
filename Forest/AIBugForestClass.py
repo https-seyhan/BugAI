@@ -167,7 +167,6 @@ def DummyModel(vectorised_data, target):
     print("Number of Outliners :", n_outliers)
     # create SVM model
 
-
     dummyclassifier = DummyClassifier(strategy='prior', constant=1)
     dummyclassifier.fit(x_train, y_train)
 
