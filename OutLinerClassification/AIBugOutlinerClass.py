@@ -41,8 +41,7 @@ def convertcbow(dataset):
         sentences.append(tokens)
         for token in tokens:
             try:
-                # linecode.append(token)
-                
+                # linecode.append(token)   
                 linecode.append(cbowmodel[token])
             except KeyError:
                 pass
