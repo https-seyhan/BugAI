@@ -277,9 +277,6 @@ def ForestModel(vectorised_data, target):
     outliers_fraction =6/300
     n_outliers = int(outliers_fraction * nsamples)
     print("Number of Outliners :", n_outliers)
-    # create SVM model
-
-
 
     forestmodel = IsolationForest(contamination="auto", random_state=42)
     forestmodel.fit(x_train, y_train)
