@@ -87,7 +87,6 @@ def OneClassModel(vectorised_data, target):
     x_test = pad_trunc(x_test, maxlen)
 
 
-
     nsamples, nx, ny = array(x_train).shape
     print("x_train shapes :", nsamples, nx, ny)
     x_train = np.reshape(x_train, (nsamples, nx * ny))
