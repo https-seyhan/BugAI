@@ -107,10 +107,9 @@ def OneClassModel(vectorised_data, target):
     #One Class SVM
     svmmodel = svm.OneClassSVM(nu= outliers_fraction, kernel="sigmoid", degree=16, gamma=0.4)
     svmmodel.fit(x_train, y_train)
-
-    dummyclassifier = DummyClassifier(strategy='constant', constant=1)
-
     pred = svmmodel.predict(x_test)
+    dummyclassifier = DummyClassifier(strategy='constant', constant=1)
+    
     #print("Predictions :", pred, '\n')
     #print ("Actual :", np.array(y_test))
 
