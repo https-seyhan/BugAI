@@ -104,6 +104,7 @@ def OneClassModel(vectorised_data, target):
     # create SVM model
     #svmmodel = svm.SVC(kernel='poly', degree=8)
     #svmmodel = svm.SVC(kernel='sigmoid')
+    #One Class SVM
     svmmodel = svm.OneClassSVM(nu= outliers_fraction, kernel="sigmoid", degree=16, gamma=0.4)
     svmmodel.fit(x_train, y_train)
 
