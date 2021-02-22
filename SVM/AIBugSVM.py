@@ -25,7 +25,7 @@ def convertcbow(dataset):
     # print(ast[:2])
     print(' CBOW model ', cbowmodel)
     # Test cbow model
-    #print("Test CBOW on the data")
+    
     
     classes = dataset['classname']
 
