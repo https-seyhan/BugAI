@@ -118,8 +118,6 @@ def SVMModel(vectorised_data, target):
     print("Confusion matrix:\n{}".format(confusion_matrix(np.array(y_test), pred)))
     print(classification_report(y_test, pred))
 
-
-
 if __name__ == '__main__':
     print(f'Test')
 
