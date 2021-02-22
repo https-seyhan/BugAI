@@ -36,14 +36,7 @@ def convertcbow(dataset):
             except KeyError:
                 pass
         vectorised_codes.append(linecode)
-    #print("Line Code", array(linecode).shape)
-    # print(linecode)
 
-    # print('Line codes ', linecode)
-    # print('Vectorised Codes ', vectorised_codes[0])
-    # print('Vectorised Codes ', len(vectorised_codes))
-    # print(f'Sentences: {sentences}')
-    #print("Vectorised Codes ", array(vectorised_codes).shape)
     return vectorised_codes
 
 def pad_trunc(data, maxlen):
