@@ -19,7 +19,6 @@ def convertcbow(dataset):
     print("Cbow called")
 
     # bugs = pd.read_csv('bug-metrics.csv', sep= ',')  
-
     ast = [row.split('::') for row in dataset['classname']]
     # print('ASTs ', ast[:2])
     # the imput to the cbow is list of list of each line
