@@ -35,7 +35,6 @@ def convertcbow(dataset):
                 linecode.append(cbowmodel[token])
             except KeyError:
                 pass
-
         vectorised_codes.append(linecode)
     #print("Line Code", array(linecode).shape)
     # print(linecode)
