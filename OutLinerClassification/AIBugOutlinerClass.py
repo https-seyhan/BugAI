@@ -294,7 +294,6 @@ def ForestModel(vectorised_data, target):
     forestmodel.fit(x_train, x_test)
     pred = forestmodel.predict(x_test)
 
-
     #print("Predictions :", pred, '\n')
     #print ("Actual :", np.array(y_test))
 
