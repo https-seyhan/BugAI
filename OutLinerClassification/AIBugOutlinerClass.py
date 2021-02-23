@@ -1,6 +1,4 @@
-from sklearn.dummy import DummyClassifier
-from sklearn.covariance import EllipticEnvelope
-from sklearn.ensemble import IsolationForest
+
 from sklearn.neighbors import LocalOutlierFactor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
