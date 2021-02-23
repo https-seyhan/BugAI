@@ -78,9 +78,6 @@ def getDataset():
     dataset = pd.read_csv('bug-metrics.csv', sep= ',')
     return dataset
 
-
-
-
 def OutlinerModel(vectorised_data, target):
 
     print(" LocalOutlierFactor model is called ")
