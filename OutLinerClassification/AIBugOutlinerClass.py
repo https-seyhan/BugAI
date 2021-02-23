@@ -1,4 +1,4 @@
-from sklearn import svm
+
 from sklearn.dummy import DummyClassifier
 from sklearn.covariance import EllipticEnvelope
 from sklearn.ensemble import IsolationForest
