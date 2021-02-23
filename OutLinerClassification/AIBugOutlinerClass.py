@@ -30,7 +30,7 @@ def convertcbow(dataset):
     print(' CBOW model ', cbowmodel)
 
     # Test cbow model 
-    #print(cbowmodel['eclipse'])
+    
 
     classes = dataset['classname']
 
