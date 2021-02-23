@@ -8,7 +8,6 @@ from sklearn import metrics
 #Import scikit-learn dataset library
 from sklearn import datasets
 from gensim.models import Word2Vec
-
 from numpy import array
 from keras.utils import to_categorical
 
