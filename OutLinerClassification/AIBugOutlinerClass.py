@@ -113,7 +113,6 @@ def OutlinerModel(vectorised_data, target):
     outlinermodel.fit(x_train, x_test)
     pred = outlinermodel.fit_predict(x_test)
 
-
     #print("Predictions :", pred, '\n')
     #print ("Actual :", np.array(y_test))
 
