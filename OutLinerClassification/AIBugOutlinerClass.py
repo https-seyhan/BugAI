@@ -81,65 +81,6 @@ def getDataset():
 
 
 
-def ForestModel(vectorised_data, target):
-
-    print(" EllipticEnvelope model is called ")
-
-    split_point = int(len(vectorised_data) * .7)
-    print('Split Point ', split_point)
-
-    # split data into training and testing
-    x_train = vectorised_data[:split_point]
-    y_train = target[:split_point]
-    #y_train = to_categorical(y_train, 2)
-
-    #plt.hist(x_train)
-    #plt.show()
-    x_test = vectorised_data[split_point:]
-    y_test = target[split_point:]
-
-
-    #make each point of data of uniform lenght
-    x_train = pad_trunc(x_train, maxlen)
-    x_test = pad_trunc(x_test, maxlen)
-
-    nsamples, nx, ny = array(x_train).shape
-    #print("x_train shapes :", nsamples, nx, ny)
-    x_train = np.reshape(x_train, (nsamples, nx * ny))
-    #x_train = np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
-    #print("Reshape of X Train :", x_train.shape)
-
-    nsamples, nx, ny = array(x_test).shape
-    print("x_test shapes :", nsamples, nx, ny)
-    x_test = np.reshape(x_test, (nsamples, nx * ny))
-    #x_train = np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
-    print("Reshape of X Test :", x_test.shape)
-
-    outliers_fraction =6/300
-    n_outliers = int(outliers_fraction * nsamples)
-    print("Number of Outliners :", n_outliers)
-    # create SVM model
-
-
-
-    forestmodel = IsolationForest(contamination="auto", random_state=42)
-    forestmodel.fit(x_train, x_test)
-    pred = forestmodel.predict(x_test)
-
-    #print("Predictions :", pred, '\n')
-    #print ("Actual :", np.array(y_test))
-
-    #y_test = to_categorical(y_test, 2)
-    # Model Accuracy: how often is the classifier correct?
-    #print("Accuracy:", metrics.accuracy_score(y_test, pred))
-
-    print("Accuracy: {:3f}".format(accuracy_score(y_test, pred > 0.5)))
-
-    # print("Confusion matrix:\n{}".format(confusion_matrix(y_test.argmax(axis=1), pred.argmax(axis=1))))
-    print("Confusion matrix:\n{}".format(confusion_matrix(np.array(y_test), pred)))
-
-    print(classification_report(y_test, pred))
-
 def OutlinerModel(vectorised_data, target):
 
     print(" LocalOutlierFactor model is called ")
