@@ -76,7 +76,7 @@ def getDataset():
 
 def OutlinerModel(vectorised_data, target):
 
-    print(" LocalOutlierFactor model is called ")
+    
 
     split_point = int(len(vectorised_data) * .7)
     print('Split Point ', split_point)
