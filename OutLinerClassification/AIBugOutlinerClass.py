@@ -1,5 +1,6 @@
 import  pandas as pd
 import numpy as np
+import seaborn as sb
 from sklearn.neighbors import LocalOutlierFactor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
@@ -10,7 +11,7 @@ from gensim.models import Word2Vec
 
 from numpy import array
 from keras.utils import to_categorical
-import seaborn as sb
+
 from matplotlib import pyplot as plt
 
 maxlen = 5 #400 # number of words in a row. Input words.
