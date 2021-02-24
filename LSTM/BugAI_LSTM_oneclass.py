@@ -181,7 +181,6 @@ def getmaxlen(dataset):
     ast = [row.split('::') for row in dataset['classname']]
     print('AST lenght ',len(ast))
     
-    
     classes = dataset['classname']
 
     for codes in classes:
