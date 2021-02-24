@@ -192,7 +192,6 @@ def getmaxlen(dataset):
         tokens = codes.split('::')
         print(len(tokens))
         
-
 def plotresults(history):
     acc = history.history['accuracy']
     val_acc = history.history['val_accuracy']
