@@ -10,7 +10,6 @@ from sklearn.metrics import confusion_matrix, accuracy_score, classification_rep
 from random import shuffle, sample
 from gensim.models import Word2Vec #convert string to vector
 from random import shuffle, sample
-
 from keras.utils import to_categorical
 
 #The objective: if this deep learning LSTM model is to predict number of bugs in a given AST code using LSTM
