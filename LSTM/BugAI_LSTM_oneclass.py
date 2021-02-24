@@ -2,6 +2,7 @@ import numpy as np
 import datetime
 import pandas as pd
 import numpy as np
+import  matplotlib.pyplot as plt
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout, Flatten, Embedding, LSTM
 from sklearn.model_selection import cross_val_predict
@@ -12,7 +13,7 @@ from random import shuffle, sample
 from gensim.models import Word2Vec #convert string to vector
 
 from random import shuffle, sample
-import  matplotlib.pyplot as plt
+
 from keras.utils import to_categorical
 
 #The objective: if this deep learning LSTM model is to predict number of bugs in a given AST code using LSTM
