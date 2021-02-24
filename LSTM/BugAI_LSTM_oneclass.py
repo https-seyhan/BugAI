@@ -207,7 +207,6 @@ def plotresults(history):
     plt.show()
 
 if __name__ == '__main__':
-
     dataset = getDataset()
     #getmaxlen(dataset)
     vectorised_data = getcbow(dataset)
