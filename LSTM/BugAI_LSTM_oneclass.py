@@ -156,7 +156,6 @@ def collect_expected(dataset):
     expected = []
     #bugsdata = pd.read_csv('bug-metrics.csv', sep= ',')
     #print(dataset.columns)
-
     bugs = dataset['bugs']
     #print(bugs)
     for bug in bugs:
