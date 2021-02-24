@@ -25,7 +25,6 @@ sample_size =  998 #10
 
 #In order to maintain semantic (AST wise) cbow approach provides best results
 def getcbow(dataset):
-
     sentences = []
     vectorised_codes = []
     ast = [row.split('::') for row in dataset['classname']]
