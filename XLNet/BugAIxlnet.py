@@ -47,8 +47,6 @@ sentences[0]
 labels = df_data.criticalBugs.to_list()
 print(labels[0])
 
-
-
 os.chdir('/home/saul/deeplearning/xlnet')
 
 #Make TAG name into index for training
