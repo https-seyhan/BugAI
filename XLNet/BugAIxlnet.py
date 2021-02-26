@@ -31,7 +31,6 @@ df_data = pd.read_csv(data_file_address,sep=",",encoding="utf-8")
 print(len(df_data))
 
 df_data.criticalBugs.head(n=2)
-
 print(df_data.classname.head(n=2))
 
 df_data.criticalBugs.unique()
