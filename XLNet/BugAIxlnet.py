@@ -26,7 +26,6 @@ from pytorch_transformers import (XLNetConfig, XLNetForSequenceClassification, X
 os.chdir('/home/saul/bugpred')
 data_file_address = "bug-metrics.csv"
 
-
 #df_data = pd.read_csv(data_file_address,sep=",",encoding="utf-8",names=['labels','texts'])
 df_data = pd.read_csv(data_file_address,sep=",",encoding="utf-8")
 print(len(df_data))
