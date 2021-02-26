@@ -38,7 +38,6 @@ df_data.criticalBugs.unique()
 df_data.criticalBugs.value_counts()
 
 #Parser data into document structure
-
 # Get sentence data
 sentences = df_data.classname.str.replace('::', ' ').to_list()
 sentences[0]
