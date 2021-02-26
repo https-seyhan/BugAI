@@ -10,7 +10,7 @@ import os
 import pandas as pd
 import math
 import numpy as np
-from sklearn.metrics import classification_report
+
 
 #pytorch
 import torch
@@ -20,7 +20,7 @@ from tqdm import tqdm,trange
 from torch.optim import Adam
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 from sklearn.model_selection import train_test_split
-
+from sklearn.metrics import classification_report
 
 #Pytorch XLNet module
 from pytorch_transformers import (XLNetConfig, XLNetForSequenceClassification, XLNetTokenizer)
