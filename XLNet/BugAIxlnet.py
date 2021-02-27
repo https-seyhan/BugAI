@@ -85,7 +85,6 @@ vocabulary = 'xlnet-base-cased-spiece.model'
 #use pre-trained weight vectors
 tokenizer = XLNetTokenizer(vocab_file=vocabulary,do_lower_case=False)
 
-
 #Set text input embedding
 
 #    token id embedding
