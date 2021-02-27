@@ -73,7 +73,7 @@ tag2name
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 n_gpu = torch.cuda.device_count()
-n_gpu
+
 
 #Load tokenizer
 
