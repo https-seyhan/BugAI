@@ -9,7 +9,6 @@ from sklearn.metrics import confusion_matrix, accuracy_score, classification_rep
 #Import scikit-learn dataset library
 from sklearn import datasets
 from gensim.models import Word2Vec
-
 from numpy import array
 from keras.utils import to_categorical
 import seaborn as sb
