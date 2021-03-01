@@ -103,7 +103,6 @@ def CovModel(vectorised_data, target):
     n_outliers = int(outliers_fraction * nsamples)
     print("Number of Outliners :", n_outliers)
     
-
     covmodel = EllipticEnvelope(contamination=0.4)
     covmodel.fit(x_train, y_train)
     pred = covmodel.predict(x_test)
