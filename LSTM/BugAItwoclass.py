@@ -1,11 +1,12 @@
 import numpy as np
+import datetime
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout, Flatten, Embedding, LSTM
 from keras.optimizers import RMSprop
 from sklearn.model_selection import cross_val_predict
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 from random import shuffle, sample
-import datetime
+
 from gensim.models import Word2Vec
 import pandas as pd
 import numpy as np
