@@ -238,7 +238,7 @@ def CovModel(vectorised_data, target):
     print(classification_report(y_test, pred))
 
 if __name__ == '__main__':
-    print(f'Test')
+   
 
     dataset = getDataset()
     vectorised_data = convertcbow(dataset)
