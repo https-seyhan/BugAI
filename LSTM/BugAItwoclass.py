@@ -9,7 +9,6 @@ from sklearn.model_selection import cross_val_predict
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 from random import shuffle, sample
 from gensim.models import Word2Vec
-
 from random import shuffle, sample
 import  matplotlib.pyplot as plt
 from keras.utils import to_categorical
