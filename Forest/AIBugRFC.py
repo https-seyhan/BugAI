@@ -70,7 +70,6 @@ def collect_expected(dataset):
     expected = []
     #bugsdata = pd.read_csv('bug-metrics.csv', sep= ',')
     #print(dataset.columns)
-
     bugs = dataset['criticalBugs'] # training dataset has 8 critical bugs and test dataset has 2. Extreamly unbalanced dataset.
 
     for bug in bugs:
