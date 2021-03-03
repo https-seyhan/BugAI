@@ -1,5 +1,6 @@
 import  pandas as pd
 import numpy as np
+import seaborn as sb
 from sklearn import svm
 from sklearn.dummy import DummyClassifier
 from sklearn.ensemble import RandomForestClassifier
@@ -12,7 +13,7 @@ from gensim.models import Word2Vec
 
 from numpy import array
 from keras.utils import to_categorical
-import seaborn as sb
+
 from matplotlib import pyplot as plt
 
 maxlen = 5 #400 # number of words in a row. Input words.
