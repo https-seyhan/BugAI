@@ -133,8 +133,7 @@ def RFCModel(vectorised_data, target):
 
 
 
-if __name__ == '__main__':
-    
+if __name__ == '__main__':  
     # Load dataset
     cancer = datasets.load_breast_cancer()
 
