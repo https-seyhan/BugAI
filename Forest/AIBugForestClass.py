@@ -290,7 +290,6 @@ def ForestModel(vectorised_data, target):
     print(classification_report(y_test, pred))
 
 if __name__ == '__main__':
-
     dataset = getDataset()
     vectorised_data = convertcbow(dataset)
     print(f'Vectorised Data Type {type(vectorised_data)}')
