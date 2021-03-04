@@ -279,8 +279,6 @@ def ForestModel(vectorised_data, target):
     forestmodel = IsolationForest(contamination="auto", random_state=42)
     forestmodel.fit(x_train, y_train)
     pred = forestmodel.predict(x_test)
-
-
     #print("Predictions :", pred, '\n')
     #print ("Actual :", np.array(y_test))
 
