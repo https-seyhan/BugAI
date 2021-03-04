@@ -15,7 +15,6 @@ from sklearn import datasets
 from gensim.models import Word2Vec
 from numpy import array
 from keras.utils import to_categorical
-
 from matplotlib import pyplot as plt
 
 #The IsolationForest ‘isolates’ observations by randomly selecting a feature and then randomly selecting 
