@@ -1,6 +1,7 @@
 import  pandas as pd
 import numpy as np
 import seaborn as sb
+import seaborn as sb
 from sklearn import svm
 from sklearn.dummy import DummyClassifier
 from sklearn.covariance import EllipticEnvelope
@@ -15,7 +16,7 @@ from gensim.models import Word2Vec
 
 from numpy import array
 from keras.utils import to_categorical
-import seaborn as sb
+
 from matplotlib import pyplot as plt
 
 #The IsolationForest ‘isolates’ observations by randomly selecting a feature and then randomly selecting 
