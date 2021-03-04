@@ -1,3 +1,5 @@
+import  pandas as pd
+import numpy as np
 from sklearn import svm
 from sklearn.dummy import DummyClassifier
 from sklearn.covariance import EllipticEnvelope
@@ -9,8 +11,7 @@ from sklearn import metrics
 #Import scikit-learn dataset library
 from sklearn import datasets
 from gensim.models import Word2Vec
-import  pandas as pd
-import numpy as np
+
 from numpy import array
 from keras.utils import to_categorical
 import seaborn as sb
