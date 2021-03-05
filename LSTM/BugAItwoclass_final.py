@@ -34,7 +34,6 @@ def getcbow(dataset):
     vectorised_codes = []
     print("Cbow called")
 
-
     ast = [row.split('::') for row in dataset['classname']]
     #print('ASTs ', ast[:2])
     #the imput to the cbow is list of list of each line
