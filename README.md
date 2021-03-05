@@ -20,3 +20,11 @@ The IsolationForest ‘isolates’ observations by randomly selecting a feature 
 Since recursive partitioning can be represented by a tree structure, the number of splittings required to isolate a sample is equivalent to the path length from the root node to the terminating node.
 This path length, averaged over a forest of such random trees, is a measure of normality and our decision function.
 Random partitioning produces noticeably shorter paths for anomalies. Hence, when a forest of random trees collectively produce shorter path lengths for particular samples, they are highly likely to be anomalies. (https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html)
+
+## LSTM Networks
+
+Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies. They were introduced by Hochreiter & Schmidhuber (1997), and were refined and popularized by many people in following work.1 They work tremendously well on a large variety of problems, and are now widely used.
+
+LSTMs are explicitly designed to avoid the long-term dependency problem. Remembering information for long periods of time is practically their default behavior, not something they struggle to learn!
+
+All recurrent neural networks have the form of a chain of repeating modules of neural network. In standard RNNs, this repeating module will have a very simple structure, such as a single tanh layer. (https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
