@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import  matplotlib.pyplot as plt
 import datetime
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout, Flatten, Embedding, LSTM, Bidirectional
@@ -9,7 +10,7 @@ from sklearn.metrics import confusion_matrix, accuracy_score, classification_rep
 from random import shuffle, sample
 from gensim.models import Word2Vec
 from random import shuffle, sample
-import  matplotlib.pyplot as plt
+
 from keras.utils import to_categorical
 #create sample weights
 from sklearn.utils import compute_sample_weight
