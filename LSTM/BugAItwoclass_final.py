@@ -200,7 +200,6 @@ def getmaxlen(dataset):
     ast = [row.split('::') for row in dataset['classname']]
     classes = dataset['classname']
     for codes in classes:
-
         linecode = []
         tokens = codes.split('::')
         #print(len(tokens))
