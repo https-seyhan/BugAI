@@ -10,7 +10,6 @@ from sklearn.metrics import confusion_matrix, accuracy_score, classification_rep
 from random import shuffle, sample
 from gensim.models import Word2Vec
 from random import shuffle, sample
-
 from keras.utils import to_categorical
 #create sample weights
 from sklearn.utils import compute_sample_weight
