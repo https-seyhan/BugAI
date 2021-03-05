@@ -208,7 +208,6 @@ def collect_expected(dataset):
     return expected
 
 def getDataset():
-
     dataset = pd.read_csv('bug-metrics.csv', sep= ',')
 
     #keep = ['classname', 'bugs']
