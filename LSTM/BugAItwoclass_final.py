@@ -30,7 +30,6 @@ num_neurons = 50 #50
 sample_size =  997 #10
 
 def getcbow(dataset):
-
     sentences = []
     vectorised_codes = []
     print("Cbow called")
