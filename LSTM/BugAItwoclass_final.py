@@ -47,7 +47,6 @@ def getcbow(dataset):
     classes = dataset['classname']
 
     for codes in classes:
-
         linecode = []
         tokens = codes.split('::')
         #print(tokens)
