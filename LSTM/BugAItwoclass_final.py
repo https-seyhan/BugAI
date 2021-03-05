@@ -196,8 +196,7 @@ def getDataset():
     dataset = pd.read_csv('bug-metrics.csv', sep= ',')
     #keep = ['classname', 'bugs']
     dataset = dataset.sample(n= sample_size, replace= True, random_state=1)
-    #print(dataset.head(5))
-    #print(len(dataset))
+
     #dataset = sample(dataset, 100)
     #shuffle(dataset)
     dataset.to_csv('sampledataset.csv')
