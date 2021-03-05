@@ -34,7 +34,6 @@ def getcbow(dataset):
     vectorised_codes = []
     print("Cbow called")
     ast = [row.split('::') for row in dataset['classname']]
-    
     #the imput to the cbow is list of list of each line
     #size of the word vector of a given token must be equal to embedding_dim of the LSTM model
     cbowmodel = Word2Vec(ast, min_count=1, size= embedding_dims, workers=3, window=3, sg=0)
