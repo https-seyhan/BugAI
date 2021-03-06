@@ -23,7 +23,7 @@ def convertcbow(dataset):
     vectorised_codes = []
     print("Cbow called")
 
-    # bugs = pd.read_csv('bug-metrics.csv', sep= ',')
+    
     
     ast = [row.split('::') for row in dataset['classname']]
     # the input to the cbow is list of list of each line
