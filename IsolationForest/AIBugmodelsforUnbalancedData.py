@@ -2,7 +2,7 @@ import  pandas as pd
 import numpy as np
 import seaborn as sb
 from sklearn import svm
-from sklearn.dummy import DummyClassifier
+
 from sklearn.covariance import EllipticEnvelope
 from sklearn.ensemble import IsolationForest
 from sklearn.model_selection import train_test_split
