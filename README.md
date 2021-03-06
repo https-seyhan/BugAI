@@ -38,4 +38,4 @@ One common way of performing outlier detection is to assume that the regular dat
 The scikit-learn provides an object covariance.EllipticEnvelope that fits a robust covariance estimate to the data, and thus fits an ellipse to the central data points, ignoring points outside the central mode.
 
 For instance, assuming that the inlier data are Gaussian distributed, it will estimate the inlier location and covariance in a robust way (i.e. without being influenced by outliers). The Mahalanobis distances obtained from this estimate is used to derive a measure of outlyingness. This strategy is illustrated below.
-()
+(https://scikit-learn.org/stable/modules/outlier_detection.html#outlier-detection)
