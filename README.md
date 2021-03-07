@@ -21,6 +21,10 @@ Since recursive partitioning can be represented by a tree structure, the number 
 This path length, averaged over a forest of such random trees, is a measure of normality and our decision function.
 Random partitioning produces noticeably shorter paths for anomalies. Hence, when a forest of random trees collectively produce shorter path lengths for particular samples, they are highly likely to be anomalies. (https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html)
 
+## DummyClassifier
+
+
+
 ## LSTM Networks
 
 Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies. They were introduced by Hochreiter & Schmidhuber (1997), and were refined and popularized by many people in following work.1 They work tremendously well on a large variety of problems, and are now widely used.
