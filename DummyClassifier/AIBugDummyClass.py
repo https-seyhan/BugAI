@@ -123,7 +123,6 @@ def DummyModel(vectorised_data, target):
 if __name__ == '__main__':
     dataset = getDataset()
     vectorised_data = convertcbow(dataset)
-    
     target = collect_expected(dataset)  # Biased two classes {198, 2} lenght is 200
 
     DummyModel(vectorised_data, target)
