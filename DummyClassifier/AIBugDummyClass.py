@@ -68,7 +68,6 @@ def getDataset():
     dataset = pd.read_csv('bug-metrics.csv', sep= ',')
     return dataset
 
-
 def DummyModel(vectorised_data, target):
     print("SVM model is called ")
 
