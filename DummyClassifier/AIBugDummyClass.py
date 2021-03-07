@@ -11,7 +11,6 @@ from sklearn import datasets
 from gensim.models import Word2Vec
 from numpy import array
 from keras.utils import to_categorical
-
 from matplotlib import pyplot as plt
 
 maxlen = 5 #400 # number of words in a row. Input words.
