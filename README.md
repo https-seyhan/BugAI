@@ -26,7 +26,7 @@ Random partitioning produces noticeably shorter paths for anomalies. Hence, when
 
 A dummy classifier is a type of classifier which does not generate any insight about the data and classifies the given data using only simple rules. The classifier’s behaviour is completely independent of the training data as the trends in the training data are completely ignored and instead uses one of the strategies to predict the class label.
 
-It is used only as a simple baseline for the other classifiers i.e. any other classifier is expected to perform better on the given dataset. It is especially useful for datasets where are sure of a class`Imbalance` `.text-blue on white` . It is based on the philosophy that any analytic approach for a classification problem should be better than a random guessing approach. (https://www.geeksforgeeks.org/ml-dummy-classifiers-using-sklearn/)
+It is used only as a simple baseline for the other classifiers i.e. any other classifier is expected to perform better on the given dataset. It is especially useful for datasets where are sure of a class`Imbalance`. It is based on the philosophy that any analytic approach for a classification problem should be better than a random guessing approach. (https://www.geeksforgeeks.org/ml-dummy-classifiers-using-sklearn/)
 
 ## LSTM Networks
 
