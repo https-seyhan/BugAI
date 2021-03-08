@@ -118,8 +118,7 @@ def SVMModel(vectorised_data, target):
     print(classification_report(y_test, pred))
 
 if __name__ == '__main__':
-    
-
+  
     # Load dataset
     cancer = datasets.load_breast_cancer()
 
