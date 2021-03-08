@@ -247,7 +247,6 @@ num_train_optimization_steps = int( math.ceil(len(tr_inputs) / batch_num) / 1) *
 
 
 #Set fine tuning method
-
 #Manual optimizer
 
 # True: fine tuning all the layers 
