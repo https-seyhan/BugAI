@@ -123,7 +123,6 @@ if __name__ == '__main__':
     # Load dataset
     cancer = datasets.load_breast_cancer()
 
-
     # print the label type of cancer('malignant' 'benign')
     #print("Labels: ", cancer.target_names)
 
