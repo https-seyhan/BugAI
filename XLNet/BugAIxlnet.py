@@ -177,7 +177,6 @@ print(tags[0])
 
 
 #Split data into train and validate
-
 #70% for training, 30% for validation
 
 #Split all data
