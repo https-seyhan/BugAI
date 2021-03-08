@@ -117,8 +117,7 @@ def SVMModel(vectorised_data, target):
     print(classification_report(y_test, pred))
 
 if __name__ == '__main__':
-    # print the label type of cancer('malignant' 'benign')
-    #print("Labels: ", cancer.target_names)
+
 
     # print data(feature)shape
     print("Cancer Data Shape :", cancer.data.shape)
