@@ -118,7 +118,6 @@ def SVMModel(vectorised_data, target):
 
 if __name__ == '__main__':
 
-
     # print data(feature)shape
     print("Cancer Data Shape :", cancer.data.shape)
     print("Cancer Target Shape : ", cancer.target_names.shape)
