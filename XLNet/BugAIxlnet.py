@@ -377,8 +377,7 @@ with open(output_eval_file, "w") as writer:
     print("***** Eval results *****")
     for key in sorted(result.keys()):
         print("  %s = %s"%(key, str(result[key])))
-        writer.write("%s = %s\n" % (key, str(result[key])))
-        
+        writer.write("%s = %s\n" % (key, str(result[key])))     
     print(report)
     writer.write("\n\n")  
     writer.write(report)
