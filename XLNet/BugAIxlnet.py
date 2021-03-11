@@ -321,9 +321,6 @@ if n_gpu >1:
     model = torch.nn.DataParallel(model)
 
 #Eval model
-    
-
-
 # Evalue loop
 model.eval()
 # Set acc funtion
