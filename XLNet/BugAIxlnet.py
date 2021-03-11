@@ -279,7 +279,6 @@ for _ in trange(epochs,desc="Epoch"):
         if n_gpu>1:
             # When multi gpu, average it
             loss = loss.mean()
-        
         # backward pass
         loss.backward()
         
