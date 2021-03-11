@@ -169,7 +169,6 @@ for i,sentence in enumerate(sentences):
 tags = [tag2idx[str(lab)] for lab in labels]
 print(tags[0])       
 
-
 #Split data into train and validate
 #70% for training, 30% for validation
 
