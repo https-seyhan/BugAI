@@ -87,7 +87,6 @@ tokenizer = XLNetTokenizer(vocab_file=vocabulary,do_lower_case=False)
 #    segment embedding
 
 #The Embedding process was referred to XLNet official repo
-
 #This process is very different from BERT
 
 #max_len  = 64
