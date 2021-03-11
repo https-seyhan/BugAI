@@ -317,7 +317,6 @@ model = XLNetForSequenceClassification.from_pretrained(xlnet_out_address,num_lab
 # Set model to GPU
 model.to(device)
 
-
 if n_gpu >1:
     model = torch.nn.DataParallel(model)
 
