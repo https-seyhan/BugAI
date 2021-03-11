@@ -201,7 +201,6 @@ valid_data = TensorDataset(val_inputs, val_masks,val_segs, val_tags)
 valid_sampler = SequentialSampler(valid_data)
 valid_dataloader = DataLoader(valid_data, sampler=valid_sampler, batch_size=batch_num)
 
-
 #Train model
 #Load XLNet model
 # In this document, contain confg(txt) and weight(bin) files
