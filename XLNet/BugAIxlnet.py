@@ -312,7 +312,6 @@ model_to_save.config.to_json_file(output_config_file)
 tokenizer.save_vocabulary(xlnet_out_address)
 
 #Load model
-
 model = XLNetForSequenceClassification.from_pretrained(xlnet_out_address,num_labels=len(tag2idx))
 # Set model to GPU
 model.to(device)
