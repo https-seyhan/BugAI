@@ -213,8 +213,6 @@ model_file_address = '/home/saul/deeplearning/xlnet'
 # Download model from "https://s3.amazonaws.com/models.huggingface.co/bert/xlnet-base-cased-config.json" 
 model = XLNetForSequenceClassification.from_pretrained(model_file_address,num_labels=len(tag2idx))
 
-
-
 # Set model to GPU,if you are using GPU machine
 model.to(device)
 # Add multi GPU support
