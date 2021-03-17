@@ -138,7 +138,6 @@ def lstmModel(vectorised_data, target):
     fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs)
 
 def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
-
     cls_weight_dict = [{0: 1, 1: 1}, {0: 1, 1: 90}] #two class mapping of weights
     val_sample_weights = compute_sample_weight(cls_weight_dict, y_test)
 
