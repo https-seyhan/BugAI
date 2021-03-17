@@ -178,7 +178,6 @@ def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
     plotresults(history, y_train)
 
     # model.save_weights("rnn_weights.h5)
-
     # print(fittedmodel)
 
 
