@@ -178,7 +178,6 @@ def collect_expected(dataset):
     #bugsdata = pd.read_csv('bug-metrics.csv', sep= ',')
     #print(dataset.columns)
     bugs = dataset['criticalBugs']
-
     for bug in bugs:
         #print(bug)
         expected.append(bug)
