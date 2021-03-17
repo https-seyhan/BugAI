@@ -1,11 +1,12 @@
 import numpy as np
+import  matplotlib.pyplot as plt
 from random import shuffle, sample
 import datetime
 from gensim.models import Word2Vec
 import pandas as pd
 import numpy as np
 from random import shuffle, sample
-import  matplotlib.pyplot as plt
+
 from keras.utils import to_categorical
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout, Flatten, Embedding, LSTM, Bidirectional
