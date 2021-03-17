@@ -182,7 +182,6 @@ def collect_expected(dataset):
     for bug in bugs:
         #print(bug)
         expected.append(bug)
-
     return expected
 
 def getDataset():
