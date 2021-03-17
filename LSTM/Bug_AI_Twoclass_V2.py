@@ -219,7 +219,6 @@ def plotresults(history, y_train):
     plt.show()
 
 def conf_matrix(history, model, x_test, y_test):
-
     pred = model.predict(x_test)
     #print(f' Predictions on Validation Data: {pred}')
     print("Accuracy: {:3f}".format(accuracy_score(y_test, pred > 0.5)))
