@@ -86,7 +86,6 @@ def lstmModel(vectorised_data, target):
 
     #reshape data into a numpy structure
     
-    print("X_TRAIN Reshape Started ")
     print(f' Training data Size: {len(x_train)}')
     print("Number of word tokens ", maxlen)
     print("Embedding Dims ", embedding_dims)
