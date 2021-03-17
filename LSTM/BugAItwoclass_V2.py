@@ -1,6 +1,5 @@
 import numpy as np
 import  matplotlib.pyplot as plt
-
 import datetime
 from random import shuffle, sample
 from gensim.models import Word2Vec
