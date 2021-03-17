@@ -167,7 +167,6 @@ def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
     model_structure = model.to_json()
     with open("BugAITwoClass_model.json", "w") as json_file:
         json_file.write(model_structure)
-
     conf_matrix(history, model, x_test, y_test)
     plotresults(history, y_train)
     # model.save_weights("rnn_weights.h5)
