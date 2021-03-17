@@ -5,7 +5,6 @@ import pandas as pd
 import numpy as np
 from random import shuffle, sample
 from gensim.models import Word2Vec
-
 from random import shuffle, sample
 from keras.utils import to_categorical
 from keras.models import Sequential
