@@ -1,8 +1,4 @@
-from keras.models import Sequential
-from keras.layers import Dense, Activation, Dropout, Flatten, Embedding, LSTM, Bidirectional
-from keras.optimizers import RMSprop
-from sklearn.model_selection import cross_val_predict
-from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
+
 import numpy as np
 from random import shuffle, sample
 import datetime
@@ -12,6 +8,11 @@ import numpy as np
 from random import shuffle, sample
 import  matplotlib.pyplot as plt
 from keras.utils import to_categorical
+from keras.models import Sequential
+from keras.layers import Dense, Activation, Dropout, Flatten, Embedding, LSTM, Bidirectional
+from keras.optimizers import RMSprop
+from sklearn.model_selection import cross_val_predict
+from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 #create sample weights
 from sklearn.utils import compute_sample_weight
 from sklearn.utils import compute_class_weight
