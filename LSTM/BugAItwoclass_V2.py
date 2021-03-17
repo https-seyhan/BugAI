@@ -6,7 +6,6 @@ from gensim.models import Word2Vec
 import pandas as pd
 import numpy as np
 from random import shuffle, sample
-
 from keras.utils import to_categorical
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout, Flatten, Embedding, LSTM, Bidirectional
