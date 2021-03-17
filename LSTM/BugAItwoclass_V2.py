@@ -140,8 +140,6 @@ def lstmModel(vectorised_data, target):
     fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs)
 
 def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
-
-
     # print('X Test ', x_test.shape)
     print('Y Test ', y_test.shape)
     #print(y_test)
