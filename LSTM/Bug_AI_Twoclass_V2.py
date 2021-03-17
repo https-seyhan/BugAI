@@ -194,9 +194,7 @@ def getDataset():
     return dataset
 
 def getmaxlen(dataset):
-    ast = [row.split('::') for row in dataset['classname']]
-
-    
+    ast = [row.split('::') for row in dataset['classname']]  
     classes = dataset['classname']
 
     for codes in classes:
