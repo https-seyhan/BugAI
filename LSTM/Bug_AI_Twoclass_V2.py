@@ -175,7 +175,7 @@ def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
 def collect_expected(dataset):
     expected = []
     #bugsdata = pd.read_csv('bug-metrics.csv', sep= ',')
-    #print(dataset.columns)
+    
     bugs = dataset['criticalBugs']
     for bug in bugs:
         #print(bug)
