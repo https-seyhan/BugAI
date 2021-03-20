@@ -34,7 +34,6 @@ def getcbow(dataset):
     print (' CBOW model ', cbowmodel)
     #Test cbow model
     print(cbowmodel['eclipse'])
-    
     classes = dataset['classname']
 
     for codes in classes:
