@@ -10,7 +10,6 @@ from gensim.models import Word2Vec
 import pandas as pd
 import numpy as np
 from random import shuffle, sample
-
 from keras.utils import to_categorical
 
 #the objective of this model is to predict number of bugs in a given AST code using LSTM
