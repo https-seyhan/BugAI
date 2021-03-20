@@ -27,9 +27,6 @@ sample_size =  998 #10 # The training samples are relatively few. Use pre-traine
 def getcbow(dataset):
     sentences = []
     vectorised_codes = []
-    
-
-
     ast = [row.split('::') for row in dataset['classname']]
     #print('ASTs ', ast[:2])
     #the imput to the cbow is list of list of each line
