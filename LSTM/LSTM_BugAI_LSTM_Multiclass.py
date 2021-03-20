@@ -25,7 +25,6 @@ num_neurons = 250 #50
 sample_size =  998 #10 # The training samples are relatively few. Use pre-trained samples to increase the accuracy.
 
 def getcbow(dataset):
-
     sentences = []
     vectorised_codes = []
     print("Cbow called")
