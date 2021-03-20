@@ -12,8 +12,8 @@ from gensim.models import Word2Vec
 from random import shuffle, sample
 from keras.utils import to_categorical
 
-#the objective of this model is to predict number of bugs in a given AST code using LSTM
-#this is a multiclass (10 classes classification)
+# The objective of this model is to predict number of bugs in a given AST code using LSTM
+# This is a multiclass (10 classes classification)
 
 traindata = '/home/saul/deeplearning/aclImdb/train'
 
