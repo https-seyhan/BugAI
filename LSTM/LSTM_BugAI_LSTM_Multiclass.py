@@ -156,7 +156,6 @@ def collect_expected(dataset):
     
     for bug in bugs:
         expected.append(bug)
-
     return expected
 
 def getDataset():
