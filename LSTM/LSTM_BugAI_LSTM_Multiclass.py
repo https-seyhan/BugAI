@@ -66,7 +66,6 @@ def pad_trunc(data, maxlen):
         else:
             temp = sample
         new_data.append(temp)
-
     return new_data
 
 def lstmModel(vectorised_data, target):
