@@ -67,7 +67,6 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 n_gpu = torch.cuda.device_count()
 
 #Load tokenizer
-
 # Manual define vocabulary address, if you download the model in local
 # The vocabulary can download from "https://s3.amazonaws.com/models.huggingface.co/bert/xlnet-base-cased-spiece.model"
 vocabulary = 'xlnet-base-cased-spiece.model'
