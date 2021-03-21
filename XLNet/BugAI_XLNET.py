@@ -39,7 +39,7 @@ sentences[0]
 
 # Get tag labels data and convert to list
 labels = df_data.criticalBugs.to_list()
-print(labels[0])
+
 
 os.chdir('/home/saul/deeplearning/xlnet')
 
