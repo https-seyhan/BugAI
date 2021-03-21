@@ -91,7 +91,7 @@ def CovModel(vectorised_data, target):
     #print("x_train shapes :", nsamples, nx, ny)
     x_train = np.reshape(x_train, (nsamples, nx * ny))
     #x_train = np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
-    #print("Reshape of X Train :", x_train.shape)
+    
 
     nsamples, nx, ny = array(x_test).shape
     print("x_test shapes :", nsamples, nx, ny)
