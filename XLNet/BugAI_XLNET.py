@@ -79,7 +79,6 @@ vocabulary = 'xlnet-base-cased-spiece.model'
 tokenizer = XLNetTokenizer(vocab_file=vocabulary,do_lower_case=False)
 
 #Set text input embedding
-
 #    token id embedding
 #    mask embedding
 #    segment embedding
