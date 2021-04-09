@@ -171,7 +171,6 @@ tr_inputs, val_inputs, tr_tags, val_tags,tr_masks, val_masks,tr_segs, val_segs =
 len(tr_inputs),len(val_inputs),len(tr_segs),len(val_segs)
 
 #Set data into tensor
-
 #Not recommend tensor.to(device) at this process, since it will run out of GPU memory
 tr_inputs = torch.tensor(tr_inputs)
 val_inputs = torch.tensor(val_inputs)
