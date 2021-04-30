@@ -104,7 +104,6 @@ def CovModel(vectorised_data, target):
     covmodel = EllipticEnvelope(contamination=0.4)
     covmodel.fit(x_train, y_train)
     pred = covmodel.predict(x_test)
-
     #print("Predictions :", pred, '\n')
     #print ("Actual :", np.array(y_test))
 
