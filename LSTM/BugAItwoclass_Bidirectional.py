@@ -1,7 +1,7 @@
 
 import numpy as np
 import datetime
-from gensim.models import Word2Vec
+
 import pandas as pd
 import numpy as np
 import  matplotlib.pyplot as plt
