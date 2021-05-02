@@ -1,4 +1,4 @@
-from keras.models import Sequential
+
 from keras.layers import Dense, Activation, Dropout, Flatten, Embedding, LSTM, Bidirectional
 from keras.optimizers import RMSprop, Adam, SGD
 from sklearn.model_selection import cross_val_predict
