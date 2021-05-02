@@ -66,7 +66,6 @@ def getcbow(dataset):
 
     return vectorised_codes
 
-
 def pad_trunc(data, maxlen):
     new_data = []
     zero_vector = []
