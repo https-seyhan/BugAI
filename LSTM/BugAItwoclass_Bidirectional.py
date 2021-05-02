@@ -63,7 +63,6 @@ def getcbow(dataset):
     #print('Vectorised Codes ', vectorised_codes[0])
     #print('Vectorised Codes ', len(vectorised_codes))
     #print(f'Sentences: {sentences}')
-
     return vectorised_codes
 
 def pad_trunc(data, maxlen):
