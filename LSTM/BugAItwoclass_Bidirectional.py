@@ -1,4 +1,4 @@
-from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
+
 import numpy as np
 import datetime
 from gensim.models import Word2Vec
