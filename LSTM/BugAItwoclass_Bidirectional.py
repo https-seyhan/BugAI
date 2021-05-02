@@ -11,6 +11,7 @@ import pandas as pd
 import numpy as np
 from random import shuffle, sample
 import  matplotlib.pyplot as plt
+from random import shuffle, sample
 from keras.utils import to_categorical
 #create sample weights
 from sklearn.utils import compute_sample_weight
