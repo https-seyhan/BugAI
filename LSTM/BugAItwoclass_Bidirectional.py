@@ -9,7 +9,7 @@ import datetime
 from gensim.models import Word2Vec
 import pandas as pd
 import numpy as np
-from random import shuffle, sample
+
 import  matplotlib.pyplot as plt
 from random import shuffle, sample
 from keras.utils import to_categorical
