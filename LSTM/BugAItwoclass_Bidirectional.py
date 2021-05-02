@@ -1,7 +1,7 @@
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout, Flatten, Embedding, LSTM, Bidirectional
 from keras.optimizers import RMSprop, Adam, SGD
-from keras import optimizers
+
 from sklearn.model_selection import cross_val_predict
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 import numpy as np
