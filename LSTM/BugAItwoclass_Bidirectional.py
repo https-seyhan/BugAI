@@ -10,8 +10,10 @@ import pandas as pd
 import numpy as np
 import  matplotlib.pyplot as plt
 from random import shuffle, sample
+from keras.models import Sequential
 from keras.utils import to_categorical
 from keras import optimizers
+
 #create sample weights
 from sklearn.utils import compute_sample_weight
 from sklearn.utils import compute_class_weight
