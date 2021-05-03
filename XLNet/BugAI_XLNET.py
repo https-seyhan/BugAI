@@ -142,7 +142,7 @@ for i,sentence in enumerate(sentences):
     assert len(input_ids) == max_len
     assert len(input_mask) == max_len
     assert len(segment_ids) == max_len
-   
+  
     full_input_ids.append(input_ids)
     full_input_masks.append(input_mask)
     full_segment_ids.append(segment_ids)
