@@ -105,7 +105,6 @@ def RFCModel(vectorised_data, target):
 
     rfcmodel = RandomForestClassifier(max_depth=1, criterion= "entropy", random_state=0)
     rfcmodel.fit(x_train, y_train)
-
     pred = rfcmodel.predict(x_test)
     #print("Predictions :", pred, '\n')
     #print ("Actual :", np.array(y_test))
