@@ -179,7 +179,6 @@ print(train_data.tensors)
 train_sampler = RandomSampler(train_data)
 # Drop last can make batch training better for the last one
 train_dataloader = DataLoader(train_data, sampler=train_sampler, batch_size=batch_num,drop_last=True)
-
 valid_data = TensorDataset(val_inputs, val_masks,val_segs, val_tags)
 valid_sampler = SequentialSampler(valid_data)
 valid_dataloader = DataLoader(valid_data, sampler=valid_sampler, batch_size=batch_num)
