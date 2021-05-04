@@ -261,7 +261,7 @@ for _ in trange(epochs,desc="Epoch"):
      
         # gradient clipping
         torch.nn.utils.clip_grad_norm_(parameters=model.parameters(), max_norm=max_grad_norm)
-        
+       
         # update parameters
         optimizer.step()
         optimizer.zero_grad()
