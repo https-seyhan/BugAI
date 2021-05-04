@@ -265,7 +265,7 @@ for _ in trange(epochs,desc="Epoch"):
         # update parameters
         optimizer.step()
         optimizer.zero_grad()
-       
+      
     # print train loss per epoch
     print("Train loss: {}".format(tr_loss/nb_tr_steps))
 
