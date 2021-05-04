@@ -215,7 +215,6 @@ num_train_optimization_steps = int( math.ceil(len(tr_inputs) / batch_num) / 1) *
 # Since XLNet in 'pytorch_transformer' did not contian classifier layers
 # FULL_FINETUNING = True need to set True
 FULL_FINETUNING = True
-
 if FULL_FINETUNING:
     # Fine tune model all layer parameters
     param_optimizer = list(model.named_parameters())
