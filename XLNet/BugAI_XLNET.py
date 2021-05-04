@@ -246,7 +246,7 @@ for _ in trange(epochs,desc="Epoch"):
         # add batch to gpu
         batch = tuple(t.to(device) for t in batch)
         b_input_ids, b_input_mask, b_segs,b_labels = batch
-        
+       
         # forward pass
         outputs = model(input_ids =b_input_ids,token_type_ids=b_segs, input_mask = b_input_mask,labels=b_labels)
         loss, logits = outputs[:2]
