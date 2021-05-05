@@ -267,7 +267,6 @@ for _ in trange(epochs,desc="Epoch"):
 
 #Save model
 xlnet_out_address = '/home/saul/xlnet/'
-
 # Make dir if not exits
 if not os.path.exists(xlnet_out_address):
         os.makedirs(xlnet_out_address)
