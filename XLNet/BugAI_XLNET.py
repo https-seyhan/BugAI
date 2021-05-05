@@ -34,7 +34,6 @@ df_data.criticalBugs.value_counts()
 # Get sentence data
 sentences = df_data.classname.str.replace('::', ' ').to_list()
 sentences[0]
-
 # Get tag labels data and convert to list
 labels = df_data.criticalBugs.to_list()
 os.chdir('/home/saul/deeplearning/xlnet')
