@@ -151,7 +151,6 @@ print(tags[0])
 
 #Split data into train and validate
 #70% for training, 30% for validation
-
 #Split all data
 tr_inputs, val_inputs, tr_tags, val_tags,tr_masks, val_masks,tr_segs, val_segs = train_test_split(full_input_ids, tags,full_input_masks,full_segment_ids, 
                                                             random_state=4, test_size=0.4)
