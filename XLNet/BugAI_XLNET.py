@@ -322,7 +322,7 @@ for step, batch in enumerate(valid_dataloader):
     eval_accuracy += tmp_eval_accuracy
    
     nb_eval_steps += 1
-      
+     
 eval_loss = eval_loss / nb_eval_steps
 eval_accuracy = eval_accuracy / len(val_inputs)
 loss = tr_loss/nb_tr_steps 
