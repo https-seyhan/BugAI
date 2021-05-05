@@ -53,7 +53,6 @@ tag2name={tag2idx[key] : key for key in tag2idx.keys()}
 
 #Make tranning data
 #Make raw data into trainable data for XLNet, including:
-
 #    Set gpu environment
 #    Load tokenizer and tokenize
 #    Set 3 embedding, token embedding, mask word embedding, segmentation embedding
