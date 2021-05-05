@@ -283,7 +283,6 @@ model = XLNetForSequenceClassification.from_pretrained(xlnet_out_address,num_lab
 model.to(device)
 if n_gpu >1:
     model = torch.nn.DataParallel(model)
-
 #Eval model
 # Evalue loop
 model.eval()
