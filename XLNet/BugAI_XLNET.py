@@ -306,7 +306,7 @@ print("  Batch size = {}".format(batch_num))
 for step, batch in enumerate(valid_dataloader):
     batch = tuple(t.to(device) for t in batch)
     b_input_ids, b_input_mask, b_segs,b_labels = batch
-  
+ 
     with torch.no_grad():
         outputs = model(input_ids =b_input_ids,token_type_ids=b_segs, input_mask = b_input_mask,labels=b_labels)
         tmp_eval_loss, logits = outputs[:2]
