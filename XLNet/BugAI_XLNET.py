@@ -296,7 +296,6 @@ def accuracy(out, labels):
     return np.sum(outputs == labels)
 eval_loss, eval_accuracy = 0, 0
 nb_eval_steps, nb_eval_examples = 0, 0
-
 y_true = []
 y_predict = []
 print("***** Running evaluation *****")
