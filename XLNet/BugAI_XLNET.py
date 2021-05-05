@@ -273,7 +273,6 @@ model_to_save = model.module if hasattr(model, 'module') else model  # Only save
 # If we save using the predefined names, we can load using `from_pretrained`
 output_model_file = os.path.join(xlnet_out_address, "pytorch_model.bin")
 output_config_file = os.path.join(xlnet_out_address, "config.json")
-
 # Save model into file
 torch.save(model_to_save.state_dict(), output_model_file)
 model_to_save.config.to_json_file(output_config_file)
