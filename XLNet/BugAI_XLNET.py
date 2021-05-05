@@ -225,7 +225,7 @@ if FULL_FINETUNING:
     ]
 else:
     # Only fine tune classifier parameters
-    param_optimizer = list(model.classifier.named_parameters()) 
+    param_optimizer = list(model.classifier.named_parameters())
     optimizer_grouped_parameters = [{"params": [p for n, p in param_optimizer]}]
 optimizer = Adam(optimizer_grouped_parameters, lr=3e-5)
 
