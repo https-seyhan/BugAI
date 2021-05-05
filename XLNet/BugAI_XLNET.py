@@ -264,7 +264,6 @@ for _ in trange(epochs,desc="Epoch"):
   
     # print train loss per epoch
     print("Train loss: {}".format(tr_loss/nb_tr_steps))
-
 #Save model
 xlnet_out_address = '/home/saul/xlnet/'
 # Make dir if not exits
