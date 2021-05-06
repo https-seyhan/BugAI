@@ -310,7 +310,6 @@ for step, batch in enumerate(valid_dataloader):
 #     Save predict and real label results for analyze
     for predict in np.argmax(logits, axis=1):
         y_predict.append(predict)
-
     for real_result in label_ids.tolist():
         y_true.append(real_result)
     eval_loss += tmp_eval_loss.mean().item()
