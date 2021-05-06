@@ -91,7 +91,6 @@ def DummyModel(vectorised_data, target):
     outliers_fraction =6/300
     n_outliers = int(outliers_fraction * nsamples)
     print("Number of Outliners :", n_outliers)
-
     dummyclassifier = DummyClassifier(strategy='prior', constant=1)
     dummyclassifier.fit(x_train, y_train)
 
