@@ -93,7 +93,6 @@ def DummyModel(vectorised_data, target):
     print("Number of Outliners :", n_outliers)
     dummyclassifier = DummyClassifier(strategy='prior', constant=1)
     dummyclassifier.fit(x_train, y_train)
-
     pred = dummyclassifier.predict(x_test)
     #print("Predictions :", pred, '\n')
     #print ("Actual :", np.array(y_test))
