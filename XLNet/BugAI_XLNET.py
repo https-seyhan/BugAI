@@ -314,7 +314,7 @@ for step, batch in enumerate(valid_dataloader):
         y_true.append(real_result)
     eval_loss += tmp_eval_loss.mean().item()
     eval_accuracy += tmp_eval_accuracy
- 
+
     nb_eval_steps += 1
      
 eval_loss = eval_loss / nb_eval_steps
