@@ -128,7 +128,6 @@ def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
     # batch_size = batch_size,
     # epochs =epochs,
     # validation_data=(np.array(x_test), np.array(y_test)))
-
     model_structure = model.to_json()
     with open("lstm_model.json", "w") as json_file:
         json_file.write(model_structure)
