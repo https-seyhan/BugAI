@@ -166,7 +166,6 @@ def plotresults(history):
 
     plt.plot(epoch, acc, 'bo', label = 'Training acc')
     plt.plot(epoch, val_acc, 'b', label='Validation acc')
-
     plt.title('Training and Validation accuracy')
     plt.legend()
     plt.figure()
