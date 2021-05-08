@@ -85,7 +85,6 @@ def lstmModel(vectorised_data, target):
     #print(type(x_train))
 
     #y_train = np.array(y_train)
-
     x_train = np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
     print("X_TRAIN Reshape Completed ")
     y_train = np.array(y_train)
