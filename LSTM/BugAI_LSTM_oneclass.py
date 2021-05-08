@@ -91,7 +91,7 @@ def lstmModel(vectorised_data, target):
     x_test = np.reshape(x_test, (len(x_test), maxlen, embedding_dims))
     y_test = np.array(y_test)
     #y_test = to_categorical(y_test, 10)
-   
+  
     model = Sequential()
     #model.add(Embedding(embedding_dims, batch_size))
 
