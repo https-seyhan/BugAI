@@ -13,7 +13,6 @@ from random import shuffle, sample
 from keras.utils import to_categorical
 
 #The objective: if this deep learning LSTM model is to predict number of bugs in a given AST code using LSTM
-
 traindata = '/home/saul/deeplearning/aclImdb/train'
 
 maxlen = 5 #400 # number of words in a row
