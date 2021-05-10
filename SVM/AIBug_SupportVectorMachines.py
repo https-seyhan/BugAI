@@ -70,7 +70,6 @@ def SVMModel(vectorised_data, target):
     x_train = vectorised_data[:split_point]
     y_train = target[:split_point]
     #y_train = to_categorical(y_train, 2)
-
     x_test = vectorised_data[split_point:]
     y_test = target[split_point:]
 
