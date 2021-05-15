@@ -181,7 +181,6 @@ valid_dataloader = DataLoader(valid_data, sampler=valid_sampler, batch_size=batc
 # In this document, contain confg(txt) and weight(bin) files
 #model_file_address = 'xlnet-base-cased'
 model_file_address = '/home/saul/deeplearning/xlnet'
-
 # Will load config and weight with from_pretrained()
 # Recommand download the model before using
 # Download model from "https://s3.amazonaws.com/models.huggingface.co/bert/xlnet-base-cased-pytorch_model.bin"
