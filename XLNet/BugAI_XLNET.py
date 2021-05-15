@@ -226,7 +226,6 @@ optimizer = Adam(optimizer_grouped_parameters, lr=3e-5)
 #Fine-tuing model
 # TRAIN loop
 model.train()
-
 print("***** Running training *****")
 print("  Num examples = %d"%(len(tr_inputs)))
 print("  Batch size = %d"%(batch_num))
