@@ -279,6 +279,7 @@ if n_gpu >1:
 #Eval model
 # Evalue loop
 model.eval()
+
 # Set acc funtion
 def accuracy(out, labels):
     outputs = np.argmax(out, axis=1)
