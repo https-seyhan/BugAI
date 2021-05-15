@@ -95,7 +95,6 @@ def CovModel(vectorised_data, target):
     pred = covmodel.predict(x_test)
     #print("Predictions :", pred, '\n')
     #print ("Actual :", np.array(y_test))
-
     #y_test = to_categorical(y_test, 2)
     # Model Accuracy: how often is the classifier correct?
     #print("Accuracy:", metrics.accuracy_score(y_test, pred))
