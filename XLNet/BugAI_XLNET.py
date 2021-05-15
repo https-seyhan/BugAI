@@ -222,7 +222,6 @@ else:
     param_optimizer = list(model.classifier.named_parameters())
     optimizer_grouped_parameters = [{"params": [p for n, p in param_optimizer]}]
 optimizer = Adam(optimizer_grouped_parameters, lr=3e-5)
-
 #Fine-tuing model
 # TRAIN loop
 model.train()
