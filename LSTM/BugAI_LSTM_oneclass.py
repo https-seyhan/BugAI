@@ -160,7 +160,6 @@ def plotresults(history):
     loss = history.history['loss']
     val_loss = history.history['val_loss']
     epoch = range(1, len(acc) + 1)
-
     plt.plot(epoch, acc, 'bo', label = 'Training acc')
     plt.plot(epoch, val_acc, 'b', label='Validation acc')
     plt.title('Training and Validation accuracy')
