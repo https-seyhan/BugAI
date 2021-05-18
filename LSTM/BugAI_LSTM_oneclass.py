@@ -131,7 +131,7 @@ def collect_expected(dataset):
     bugs = dataset['bugs']
     #print(bugs)
     for bug in bugs:
-     
+    
         expected.append(bug)
     return expected
 
