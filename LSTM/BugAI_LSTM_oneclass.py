@@ -106,7 +106,7 @@ def lstmModel(vectorised_data, target):
     #model.compile('rmsprop', 'binary_crossentropy', metrics=['accuracy'])
     model.compile('rmsprop', 'binary_crossentropy', metrics=['accuracy'])
     #model.compile(
-        #optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+       #optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     print(model.summary())
     fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs)
 
