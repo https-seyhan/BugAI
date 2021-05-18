@@ -37,7 +37,6 @@ def getcbow(dataset):
     for codes in classes:
         linecode = []
         tokens = codes.split('::')
-
         sentences.append(tokens)
         for token in tokens:
             try:
