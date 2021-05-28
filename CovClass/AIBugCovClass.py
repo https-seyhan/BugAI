@@ -65,7 +65,7 @@ def getDataset():
     return dataset
 
 def CovModel(vectorised_data, target):
-    print(" EllipticEnvelope model is called ")
+    
     split_point = int(len(vectorised_data) * .7)
     print('Split Point ', split_point)
     # split data into training and testing
