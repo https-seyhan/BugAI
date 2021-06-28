@@ -235,6 +235,7 @@ print("***** Running training *****")
 print("  Num examples = %d"%(len(tr_inputs)))
 print("  Batch size = %d"%(batch_num))
 print("  Num steps = %d"%(num_train_optimization_steps))
+
 for _ in trange(epochs,desc="Epoch"):
     tr_loss = 0
     nb_tr_examples, nb_tr_steps = 0, 0
