@@ -279,6 +279,7 @@ tokenizer.save_vocabulary(xlnet_out_address)
 model = XLNetForSequenceClassification.from_pretrained(xlnet_out_address,num_labels=len(tag2idx))
 # Set model to GPU
 model.to(device)
+
 if n_gpu >1:
     model = torch.nn.DataParallel(model)
 #Eval model
