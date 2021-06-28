@@ -171,6 +171,7 @@ val_segs = torch.tensor(val_segs)
 
 #Copy data into data loader
 # Set token embedding, attention embedding, segment embedding
+
 train_data = TensorDataset(tr_inputs, tr_masks,tr_segs, tr_tags)
 print(train_data.tensors)
 train_sampler = RandomSampler(train_data)
