@@ -70,7 +70,7 @@ vocabulary = 'xlnet-base-cased-spiece.model'
 # See model's 'max_position_embeddings' = 512
 #max_len  = 64
 # With cased model, set do_lower_case = False
-#use pre-trained weight vectors
+#use pre-trained weight vectors\
 tokenizer = XLNetTokenizer(vocab_file=vocabulary,do_lower_case=False)
 
 #Set text input embedding
