@@ -251,7 +251,7 @@ for _ in trange(epochs,desc="Epoch"):
         # forward pass
         outputs = model(input_ids =b_input_ids,token_type_ids=b_segs, input_mask = b_input_mask,labels=b_labels)
         loss, logits = outputs[:2]
-       
+      
         if n_gpu>1:
             # When multi gpu, average it
             loss = loss.mean()
