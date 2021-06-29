@@ -302,6 +302,7 @@ eval_loss, eval_accuracy = 0, 0
 nb_eval_steps, nb_eval_examples = 0, 0
 y_true = []
 y_predict = []
+
 print("***** Running evaluation *****")
 print("  Num examples ={}".format(len(val_inputs)))
 print("  Batch size = {}".format(batch_num))
