@@ -28,6 +28,7 @@ df_data = pd.read_csv(data_file_address,sep=",",encoding="utf-8")
 
 df_data.criticalBugs.head(n=2)
 df_data.criticalBugs.unique()
+
 # Analyse the labels distribution
 df_data.criticalBugs.value_counts()
 
