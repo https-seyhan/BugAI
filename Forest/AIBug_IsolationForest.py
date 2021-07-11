@@ -19,6 +19,7 @@ from matplotlib import pyplot as plt
 #NLP parameters
 maxlen = 5 #400 # number of words in a row. Input words.
 embedding_dims = 6 #300 #5 #300
+outliers_fraction =6/300
 
 def convertcbow(dataset):
     sentences = []
