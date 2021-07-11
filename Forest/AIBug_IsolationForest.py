@@ -71,7 +71,6 @@ def getDataset():
     dataset = pd.read_csv('bug-metrics.csv', sep= ',')
     return dataset
 
-
 def ForestModel(vectorised_data, target):
     print(" EllipticEnvelope model is called ")
 
