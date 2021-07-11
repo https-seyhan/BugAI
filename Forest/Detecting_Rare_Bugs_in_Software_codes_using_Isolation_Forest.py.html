@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Detecting_Rare_Bugs_in_Software_codes_using_Isolation_Forest.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #6897bb;}
+.s4 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Detecting_Rare_Bugs_in_Software_codes_using_Isolation_Forest.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import  </span><span class="s1">pandas </span><span class="s0">as </span><span class="s1">pd</span>
+<span class="s0">import </span><span class="s1">numpy </span><span class="s0">as </span><span class="s1">np</span>
+<span class="s0">import </span><span class="s1">seaborn </span><span class="s0">as </span><span class="s1">sb</span>
+<span class="s0">import </span><span class="s1">seaborn </span><span class="s0">as </span><span class="s1">sb</span>
+<span class="s0">from </span><span class="s1">sklearn.ensemble </span><span class="s0">import </span><span class="s1">IsolationForest</span>
+<span class="s0">from </span><span class="s1">sklearn.model_selection </span><span class="s0">import </span><span class="s1">train_test_split</span>
+<span class="s0">from </span><span class="s1">sklearn.metrics </span><span class="s0">import </span><span class="s1">confusion_matrix</span><span class="s0">, </span><span class="s1">accuracy_score</span><span class="s0">, </span><span class="s1">classification_report</span>
+<span class="s0">from </span><span class="s1">sklearn </span><span class="s0">import </span><span class="s1">metrics</span>
+<span class="s0">from </span><span class="s1">sklearn </span><span class="s0">import </span><span class="s1">datasets</span>
+<span class="s0">from </span><span class="s1">gensim.models </span><span class="s0">import </span><span class="s1">Word2Vec</span>
+<span class="s0">from </span><span class="s1">numpy </span><span class="s0">import </span><span class="s1">array</span>
+<span class="s0">from </span><span class="s1">keras.utils </span><span class="s0">import </span><span class="s1">to_categorical</span>
+<span class="s0">from </span><span class="s1">matplotlib </span><span class="s0">import </span><span class="s1">pyplot </span><span class="s0">as </span><span class="s1">plt</span>
+
+<span class="s2">#The IsolationForest ‘isolates’ observations by randomly selecting a feature and then randomly selecting </span>
+<span class="s2">#a split value between the maximum and minimum values of the selected feature.</span>
+
+<span class="s2">#NLP parameters</span>
+<span class="s1">maxlen = </span><span class="s3">5 </span><span class="s2">#400 # number of words in a row. Input words.</span>
+<span class="s1">embedding_dims = </span><span class="s3">6 </span><span class="s2">#300 #5 #300</span>
+<span class="s1">outliers_fraction =</span><span class="s3">6</span><span class="s1">/</span><span class="s3">300</span>
+
+<span class="s0">def </span><span class="s1">convertcbow(dataset):</span>
+    <span class="s1">sentences = []</span>
+    <span class="s1">vectorised_codes = []</span>
+    <span class="s1">print(</span><span class="s4">&quot;Cbow called&quot;</span><span class="s1">)</span>
+    <span class="s1">ast = [row.split(</span><span class="s4">'::'</span><span class="s1">) </span><span class="s0">for </span><span class="s1">row </span><span class="s0">in </span><span class="s1">dataset[</span><span class="s4">'classname'</span><span class="s1">]]</span>
+    <span class="s2"># the input to the cbow is list of list of each line</span>
+    <span class="s1">cbowmodel = Word2Vec(ast</span><span class="s0">, </span><span class="s1">min_count=</span><span class="s3">1</span><span class="s0">, </span><span class="s1">size=embedding_dims</span><span class="s0">, </span><span class="s1">workers=</span><span class="s3">3</span><span class="s0">, </span><span class="s1">window=</span><span class="s3">6</span><span class="s0">, </span><span class="s1">sg=</span><span class="s3">0</span><span class="s1">)</span>
+    <span class="s1">print(</span><span class="s4">' CBOW model '</span><span class="s0">, </span><span class="s1">cbowmodel)</span>
+    <span class="s1">classes = dataset[</span><span class="s4">'classname'</span><span class="s1">]</span>
+ 
+    <span class="s0">for </span><span class="s1">codes </span><span class="s0">in </span><span class="s1">classes:</span>
+        <span class="s1">linecode = []</span>
+        <span class="s1">tokens = codes.split(</span><span class="s4">'::'</span><span class="s1">)</span>
+        <span class="s2"># print(tokens)</span>
+        <span class="s1">sentences.append(tokens)</span>
+        <span class="s0">for </span><span class="s1">token </span><span class="s0">in </span><span class="s1">tokens:</span>
+            <span class="s0">try</span><span class="s1">:</span>
+                <span class="s1">linecode.append(cbowmodel[token])</span>
+            <span class="s0">except </span><span class="s1">KeyError:</span>
+                <span class="s0">pass</span>
+        <span class="s1">vectorised_codes.append(linecode)</span>
+    <span class="s0">return </span><span class="s1">vectorised_codes</span>
+
+<span class="s2"># Append zeros to the enof the sentences if the sentences are short</span>
+<span class="s0">def </span><span class="s1">pad_trunc(data</span><span class="s0">, </span><span class="s1">maxlen):</span>
+    <span class="s1">new_data = []</span>
+    <span class="s1">zero_vector = []</span>
+    <span class="s0">for </span><span class="s1">_ </span><span class="s0">in </span><span class="s1">range(len(data[</span><span class="s3">0</span><span class="s1">][</span><span class="s3">0</span><span class="s1">])):</span>
+        <span class="s1">zero_vector.append(</span><span class="s3">0.0</span><span class="s1">)</span>
+    <span class="s0">for </span><span class="s1">sample </span><span class="s0">in </span><span class="s1">data:</span>
+        <span class="s0">if </span><span class="s1">len(sample) &gt; maxlen:</span>
+            <span class="s1">temp = sample[:maxlen]</span>
+        <span class="s0">elif </span><span class="s1">len(sample) &lt; maxlen:</span>
+            <span class="s1">temp = sample</span>
+            <span class="s1">additional_elems = maxlen - len(sample)</span>
+            <span class="s0">for </span><span class="s1">_ </span><span class="s0">in </span><span class="s1">range(additional_elems):</span>
+                <span class="s1">temp.append(temp)</span>
+        <span class="s0">else</span><span class="s1">:</span>
+            <span class="s1">temp = sample</span>
+        <span class="s1">new_data.append(temp)</span>
+    <span class="s0">return </span><span class="s1">new_data</span>
+
+<span class="s0">def </span><span class="s1">collect_expected(dataset):</span>
+    <span class="s1">expected = []</span>
+    <span class="s1">bugs = dataset[</span><span class="s4">'criticalBugs'</span><span class="s1">] </span><span class="s2"># training dataset has 8 critical bugs and test dataset has 2. Extremely unbalanced dataset.</span>
+    <span class="s0">for </span><span class="s1">bug </span><span class="s0">in </span><span class="s1">bugs:</span>
+        <span class="s1">expected.append(bug)</span>
+    <span class="s0">return </span><span class="s1">expected</span>
+
+<span class="s0">def </span><span class="s1">getDataset():</span>
+    <span class="s1">dataset = pd.read_csv(</span><span class="s4">'bug-metrics.csv'</span><span class="s0">, </span><span class="s1">sep= </span><span class="s4">','</span><span class="s1">)</span>
+    <span class="s0">return </span><span class="s1">dataset</span>
+
+<span class="s0">def </span><span class="s1">ForestModel(vectorised_data</span><span class="s0">, </span><span class="s1">target):</span>
+    <span class="s1">split_point = int(len(vectorised_data) * </span><span class="s3">.7</span><span class="s1">)</span>
+    <span class="s1">print(</span><span class="s4">'Split Point '</span><span class="s0">, </span><span class="s1">split_point)</span>
+    <span class="s2"># split data into training and testing</span>
+    <span class="s1">x_train = vectorised_data[:split_point]</span>
+    <span class="s1">y_train = target[:split_point]</span>
+    <span class="s1">x_test = vectorised_data[split_point:]</span>
+    <span class="s1">y_test = target[split_point:]</span>
+    <span class="s2">#make each point of data of uniform lenght</span>
+    <span class="s1">x_train = pad_trunc(x_train</span><span class="s0">, </span><span class="s1">maxlen)</span>
+    <span class="s1">x_test = pad_trunc(x_test</span><span class="s0">, </span><span class="s1">maxlen)</span>
+
+    <span class="s1">nsamples</span><span class="s0">, </span><span class="s1">nx</span><span class="s0">, </span><span class="s1">ny = array(x_train).shape</span>
+    <span class="s1">x_train = np.reshape(x_train</span><span class="s0">, </span><span class="s1">(nsamples</span><span class="s0">, </span><span class="s1">nx * ny))</span>
+    <span class="s1">nsamples</span><span class="s0">, </span><span class="s1">nx</span><span class="s0">, </span><span class="s1">ny = array(x_test).shape</span>
+    <span class="s1">print(</span><span class="s4">&quot;x_test shapes :&quot;</span><span class="s0">, </span><span class="s1">nsamples</span><span class="s0">, </span><span class="s1">nx</span><span class="s0">, </span><span class="s1">ny)</span>
+    <span class="s1">x_test = np.reshape(x_test</span><span class="s0">, </span><span class="s1">(nsamples</span><span class="s0">, </span><span class="s1">nx * ny))</span>
+ 
+    <span class="s1">n_outliers = int(outliers_fraction * nsamples)</span>
+    <span class="s1">print(</span><span class="s4">&quot;Number of Outliners :&quot;</span><span class="s0">, </span><span class="s1">n_outliers)</span>
+
+    <span class="s1">forestmodel = IsolationForest(contamination=</span><span class="s4">&quot;auto&quot;</span><span class="s0">, </span><span class="s1">random_state=</span><span class="s3">42</span><span class="s1">)</span>
+    <span class="s1">forestmodel.fit(x_train</span><span class="s0">, </span><span class="s1">y_train)</span>
+    <span class="s1">pred = forestmodel.predict(x_test)</span>
+
+    <span class="s1">print(</span><span class="s4">&quot;Accuracy: {:3f}&quot;</span><span class="s1">.format(accuracy_score(y_test</span><span class="s0">, </span><span class="s1">pred &gt; </span><span class="s3">0.5</span><span class="s1">)))</span>
+    <span class="s1">print(</span><span class="s4">&quot;Confusion matrix:</span><span class="s0">\n</span><span class="s4">{}&quot;</span><span class="s1">.format(confusion_matrix(np.array(y_test)</span><span class="s0">, </span><span class="s1">pred)))</span>
+    <span class="s1">print(classification_report(y_test</span><span class="s0">, </span><span class="s1">pred))</span>
+
+<span class="s0">if </span><span class="s1">__name__ == </span><span class="s4">'__main__'</span><span class="s1">:</span>
+    <span class="s1">dataset = getDataset()</span>
+    <span class="s1">vectorised_data = convertcbow(dataset)</span>
+    <span class="s1">print(</span><span class="s4">f'Vectorised Data Type </span><span class="s0">{</span><span class="s1">type(vectorised_data)</span><span class="s0">}</span><span class="s4">'</span><span class="s1">)</span>
+    <span class="s1">target = collect_expected(dataset)  </span><span class="s2"># Biased two classes {198, 2} lenght is 200</span>
+    <span class="s1">ForestModel(vectorised_data</span><span class="s0">, </span><span class="s1">target)</span>
+</pre>
+</body>
+</html>
