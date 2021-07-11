@@ -81,7 +81,6 @@ def ForestModel(vectorised_data, target):
     # split data into training and testing
     x_train = vectorised_data[:split_point]
     y_train = target[:split_point]
-
     #plt.hist(x_train)
     #plt.show()
     x_test = vectorised_data[split_point:]
