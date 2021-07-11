@@ -6,7 +6,6 @@ from sklearn.ensemble import IsolationForest
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 from sklearn import metrics
-
 from sklearn import datasets
 from gensim.models import Word2Vec
 from numpy import array
