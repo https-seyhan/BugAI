@@ -93,7 +93,7 @@ def ForestModel(vectorised_data, target):
     nsamples, nx, ny = array(x_test).shape
     print("x_test shapes :", nsamples, nx, ny)
     x_test = np.reshape(x_test, (nsamples, nx * ny))
-    #x_train = np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
+    #
     print("Reshape of X Test :", x_test.shape)
 
     n_outliers = int(outliers_fraction * nsamples)
