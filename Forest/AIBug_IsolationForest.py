@@ -71,7 +71,6 @@ def getDataset():
     dataset = pd.read_csv('bug-metrics.csv', sep= ',')
     return dataset
 
-
 def CovModel(vectorised_data, target):
     print(" EllipticEnvelope model is called ")
     split_point = int(len(vectorised_data) * .7)
