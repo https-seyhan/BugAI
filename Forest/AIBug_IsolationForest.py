@@ -90,7 +90,7 @@ def ForestModel(vectorised_data, target):
     nsamples, nx, ny = array(x_train).shape
     #print("x_train shapes :", nsamples, nx, ny)
     x_train = np.reshape(x_train, (nsamples, nx * ny))
- 
+
     nsamples, nx, ny = array(x_test).shape
     print("x_test shapes :", nsamples, nx, ny)
     x_test = np.reshape(x_test, (nsamples, nx * ny))
