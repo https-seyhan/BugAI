@@ -105,7 +105,7 @@ def ForestModel(vectorised_data, target):
     pred = forestmodel.predict(x_test)
 
     print("Accuracy: {:3f}".format(accuracy_score(y_test, pred > 0.5)))
-    # print("Confusion matrix:\n{}".format(confusion_matrix(y_test.argmax(axis=1), pred.argmax(axis=1))))
+    
     print("Confusion matrix:\n{}".format(confusion_matrix(np.array(y_test), pred)))
     print(classification_report(y_test, pred))
 
