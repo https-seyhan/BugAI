@@ -126,7 +126,7 @@ if __name__ == '__main__':
     vectorised_data = convertcbow(dataset)
     print(f'Vectorised Data Type {type(vectorised_data)}')
     target = collect_expected(dataset)  # Biased two classes {198, 2} lenght is 200
-  
+ 
     #DummyModel(vectorised_data, target)
     #CovModel(vectorised_data, target)
     ForestModel(vectorised_data, target)
