@@ -70,7 +70,6 @@ def CovModel(vectorised_data, target):
     # split data into training and testing
     x_train = vectorised_data[:split_point]
     y_train = target[:split_point]
-
     #y_train = to_categorical(y_train, 2)
     #plt.hist(x_train)
     #plt.show()
