@@ -91,7 +91,7 @@ def SVMModel(vectorised_data, target):
     svmmodel = svm.OneClassSVM(nu=0.03, kernel="rbf", gamma=0.02)
     svmmodel.fit(x_train, y_train)
     pred = svmmodel.predict(x_test
-               )
+              )
     #print("Predictions :", pred, '\n')
     #print ("Actual :", np.array(y_test))
     #y_test = to_categorical(y_test, 2)
