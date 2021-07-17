@@ -29,6 +29,7 @@ def convertcbow(dataset):
         linecode = []
         tokens = codes.split('::')
         sentences.append(tokens)
+        
         for token in tokens:
             try:
                 linecode.append(cbowmodel[token])
