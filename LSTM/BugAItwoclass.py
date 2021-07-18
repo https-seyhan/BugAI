@@ -240,7 +240,6 @@ def conf_matrix(history, model, x_test, y_test):
 
     #print("Confusion matrix:\n{}".format(confusion_matrix(y_test.argmax(axis=1), pred.argmax(axis=1))))
     print("Confusion matrix:\n{}".format(confusion_matrix(y_test.argmax(axis=1), pred.argmax(axis=1))))
-
     score, acc = model.evaluate(x_test, y_test, batch_size=batch_size)
     print('Test score:', score)
     print('Test accuracy:', acc)
