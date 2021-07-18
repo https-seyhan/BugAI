@@ -198,7 +198,6 @@ def collect_expected(dataset):
 def getDataset():
 
     dataset = pd.read_csv('bug-metrics.csv', sep= ',')
-
     #keep = ['classname', 'bugs']
     dataset = dataset.sample(n= sample_size, replace= True, random_state=1)
     #print(dataset.head(5))
