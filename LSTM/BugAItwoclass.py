@@ -156,7 +156,6 @@ def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
 
     cls_weight_dict = [{0: 1, 1: 1}, {0: 1, 1: 80}] #two class mapping of weights
     val_sample_weights = compute_sample_weight(cls_weight_dict, y_test)
-
     weights = compute_sample_weight(class_weight="balanced", y=y_train)
     #weights = compute_sample_weight(class_weight="None", y=y_train)
     #class_weights = compute_class_weight('balanced', y_train,  y_train)
