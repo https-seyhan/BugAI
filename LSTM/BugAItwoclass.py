@@ -195,7 +195,6 @@ def getDataset():
     #shuffle(dataset)
     dataset.to_csv('sampledataset.csv')
     return dataset
-
 def getmaxlen(dataset):
     ast = [row.split('::') for row in dataset['classname']]
     print('AST lenght ',len(ast))
