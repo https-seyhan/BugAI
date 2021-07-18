@@ -233,7 +233,6 @@ def conf_matrix(history, model, x_test, y_test):
     pred = model.predict(x_test)
     #print(f' Predictions on Validation Data: {pred}')
     print("Accuracy: {:3f}".format(accuracy_score(y_test, pred > 0.5)))
-
     #print("Confusion matrix:\n{}".format(confusion_matrix(y_test.argmax(axis=1), pred.argmax(axis=1))))
     print("Confusion matrix:\n{}".format(confusion_matrix(y_test.argmax(axis=1), pred.argmax(axis=1))))
     score, acc = model.evaluate(x_test, y_test, batch_size=batch_size)
