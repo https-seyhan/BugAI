@@ -239,7 +239,6 @@ def conf_matrix(history, model, x_test, y_test):
     print('Test accuracy:', acc)
 
 if __name__ == '__main__':
-
     dataset = getDataset()
     #getmaxlen(dataset)
     vectorised_data = getcbow(dataset)
