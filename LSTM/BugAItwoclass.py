@@ -52,7 +52,6 @@ def getcbow(dataset):
         for token in tokens:
             try:
                 #linecode.append(token)
-
                 linecode.append(cbowmodel[token])
             except KeyError:
                 pass
