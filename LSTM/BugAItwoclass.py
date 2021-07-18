@@ -121,7 +121,6 @@ def lstmModel(vectorised_data, target):
     
     model = Sequential()
     #model.add(Embedding(embedding_dims, batch_size)) print(f' Training data Size: {len(x_train)}')
-
     #model.add(LSTM(num_neurons, return_sequences=True, input_shape=(maxlen, embedding_dims)))
     #model.add(LSTM(num_neurons, return_sequences=True, input_shape=(maxlen , embedding_dims)))
     #model.add(Dense(2, activation='relu'))
