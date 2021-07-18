@@ -130,7 +130,6 @@ def lstmModel(vectorised_data, target):
     #model.add(Dense(2, activation='tanh'))  # two class
     #model.add((Dense(2)))
     #model.add(Activation('softmax'))  # one class
-
     optimizer = RMSprop(learning_rate=0.001) # use learning rate to improve the accuracy of the model
     #model.compile('rmsprop', 'binary_crossentropy', metrics=['accuracy'])
     model.compile(loss='binary_crossentropy', optimizer=optimizer)
