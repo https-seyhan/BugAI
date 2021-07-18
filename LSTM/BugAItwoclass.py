@@ -32,7 +32,7 @@ def getcbow(dataset):
     vectorised_codes = []
     print("Cbow called")
     #bugs = pd.read_csv('bug-metrics.csv', sep= ',')
- 
+
     ast = [row.split('::') for row in dataset['classname']]
     #The input to the cbow is list of list of each line
     #size of the word vector of a given token must be equal to embedding_dim of the LSTM model
