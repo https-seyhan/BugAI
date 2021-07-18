@@ -218,7 +218,6 @@ def getmaxlen(dataset):
     #print(ast[:2])
     
     classes = dataset['classname']
-
     for codes in classes:
 
         linecode = []
