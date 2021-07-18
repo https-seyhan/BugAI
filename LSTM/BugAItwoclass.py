@@ -51,7 +51,7 @@ def getcbow(dataset):
         sentences.append(tokens)
         for token in tokens:
             try:
-            
+           
                 #linecode.append(token)
                 #print("Word Vector ", len(cbowmodel[token]))
                 linecode.append(cbowmodel[token])
