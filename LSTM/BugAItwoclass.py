@@ -223,7 +223,6 @@ def plotresults(history, y_train):
 
     acc = history.history['accuracy']
     val_acc = history.history['val_accuracy']
-
     loss = history.history['loss']
     val_loss = history.history['val_loss']
 
