@@ -97,7 +97,7 @@ def DummyModel(vectorised_data, target):
     dummyclassifier = DummyClassifier(strategy='prior', constant=1)
     dummyclassifier.fit(x_train, y_train)
     pred = dummyclassifier.predict(x_test)
-    #print("Predictions :", pred, '\n')
+    
     #print ("Actual :", np.array(y_test))
     #y_test = to_categorical(y_test, 2)
     # Model Accuracy: how often is the classifier correct?
