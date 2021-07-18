@@ -208,7 +208,6 @@ def getmaxlen(dataset):
         #print(len(tokens))
         
 def plotresults(history, y_train):
-
     weights = compute_sample_weight(class_weight="balanced", y=y_train)
 
     #print("Weights :::", weights)
