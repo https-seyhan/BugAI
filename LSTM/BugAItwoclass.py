@@ -243,7 +243,6 @@ def conf_matrix(history, model, x_test, y_test):
     print('Test score:', score)
     print('Test accuracy:', acc)
 
-
 if __name__ == '__main__':
 
     dataset = getDataset()
