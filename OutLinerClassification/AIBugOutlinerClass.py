@@ -103,7 +103,6 @@ def OutlinerModel(vectorised_data, target):
     outlinermodel.fit(x_train, x_test)
     pred = outlinermodel.fit_predict(x_test)
 
-
     #y_test = to_categorical(y_test, 2)
     #Model Accuracy: how often is the classifier correct?
     #print("Accuracy:", metrics.accuracy_score(y_test, pred))
