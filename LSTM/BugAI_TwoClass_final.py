@@ -83,7 +83,7 @@ def lstmModel(vectorised_data, target):
     #make each point of data of uniform lenght
     x_train = pad_trunc(x_train, maxlen)
     x_test = pad_trunc(x_test, maxlen)
- 
+
     #reshape data into a numpy structure
 
     print("X_TRAIN Reshape Started ")
