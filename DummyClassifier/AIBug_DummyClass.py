@@ -34,7 +34,7 @@ def convertcbow(dataset):
             except KeyError:
                 pass
         vectorised_codes.append(linecode)
-   
+  
 def pad_trunc(data, maxlen):
     new_data = []
     zero_vector = []
