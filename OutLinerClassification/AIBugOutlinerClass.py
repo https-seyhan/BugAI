@@ -97,6 +97,7 @@ def OutlinerModel(vectorised_data, target):
     outliers_fraction =6/300
     n_outliers = int(outliers_fraction * nsamples)
     #print("Number of Outliners :", n_outliers)
+    
     outlinermodel = LocalOutlierFactor(
         n_neighbors=2, contamination=0.01)
 
