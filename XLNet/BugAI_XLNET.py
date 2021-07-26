@@ -280,7 +280,7 @@ xlnet_out_address = '/home/saul/xlnet/'
 # Make dir if not exits
 if not os.path.exists(xlnet_out_address):
         os.makedirs(xlnet_out_address)
-  
+ 
 # Save a trained model, configuration and tokenizer
 model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
 # If we save using the predefined names, we can load using `from_pretrained`
