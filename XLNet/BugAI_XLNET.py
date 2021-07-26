@@ -201,6 +201,7 @@ model = XLNetForSequenceClassification.from_pretrained(model_file_address,num_la
 
 # Set model to GPU,if you are using GPU machine
 model.to(device)
+
 # Add multi GPU support
 if n_gpu >1:
     model = torch.nn.DataParallel(model)
