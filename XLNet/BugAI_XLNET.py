@@ -274,6 +274,7 @@ for _ in trange(epochs,desc="Epoch"):
     print("Train loss: {}".format(tr_loss/nb_tr_steps))
 #Save model
 xlnet_out_address = '/home/saul/xlnet/'
+
 # Make dir if not exits
 if not os.path.exists(xlnet_out_address):
         os.makedirs(xlnet_out_address)
