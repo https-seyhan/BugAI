@@ -143,7 +143,7 @@ for i,sentence in enumerate(sentences):
     full_input_ids.append(input_ids)
     full_input_masks.append(input_mask)
     full_segment_ids.append(segment_ids)
-
+    
     if 3 > i:
         print("No.:%d"%(i))
         print("sentence: %s"%(sentence))
