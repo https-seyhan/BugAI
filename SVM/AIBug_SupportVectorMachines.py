@@ -97,7 +97,6 @@ def SVMModel(vectorised_data, target):
    
 
 
-
     #print("Predictions :", pred, '\n')
     #print ("Actual :", np.array(y_test))
     
