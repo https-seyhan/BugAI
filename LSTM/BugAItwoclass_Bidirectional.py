@@ -140,7 +140,7 @@ def lstmModel(vectorised_data, target):
     adam = Adam(lr=0.001)
     #sgd = SGD(lr=0.1)
     #sgd = optimizers.SGD(lr=0.0001, decay=1e-6, momentum=0.2, nesterov=True)
-
+    
     model.compile(loss='binary_crossentropy', optimizer= rmsprob, metrics=['accuracy'])
     #model.compile(loss='binary_crossentropy', optimizer=adam)
     #model.compile(loss='binary_crossentropy', optimizer=sgd, metrics=['accuracy'] )
