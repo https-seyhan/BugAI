@@ -112,7 +112,7 @@ def lstmModel(vectorised_data, target):
     #print(f'Y_TEST DATA: {y_test}')
     print((f'Y_TEST_DATA LENGHT{len(y_test)}'))
     print("Data Reshape Ended ")
- 
+
     model = Sequential()
     #model.add(Embedding(embedding_dims, batch_size))
     #model.add(Embedding(output_dim=512, input_dim=10000, input_length=100))
