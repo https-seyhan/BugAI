@@ -57,7 +57,7 @@ def getcbow(dataset):
             except KeyError:
                 pass
         vectorised_codes. append(linecode)
-        
+       
     #print(len(linecode))
     #print(linecode)
     #print('Line codes ', linecode)
