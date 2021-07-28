@@ -130,7 +130,7 @@ def lstmModel(vectorised_data, target):
     #model.add(Dropout(0.2))
 
     model.add(Dense(2, activation='sigmoid'))  # two class
-    
+   
     #model.add(Dense(2, activation='tanh'))  # two class
     #model.add((Dense(2)))
     #model.add(Activation('softmax'))  # one class
