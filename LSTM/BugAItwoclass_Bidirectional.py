@@ -148,7 +148,6 @@ def lstmModel(vectorised_data, target):
     #model.compile(loss='binary_crossentropy', optimizer=sgd, metrics=['accuracy'] )
 
     #model.compile('rmsprop', 'binary_crossentropy', metrics=['accuracy'])
-
     #model.compile(loss='categorical_crossentropy', optimizer=rmsprob)
     #model.compile('rmsprop', 'binary_crossentropy', metrics=['accuracy'])
     #model.compile(sample_weight_mode="temporal"
