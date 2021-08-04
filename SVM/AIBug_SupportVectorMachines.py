@@ -96,7 +96,6 @@ def SVMModel(vectorised_data, target):
     svmmodel.fit(x_train, y_train)
     pred = svmmodel.predict(x_test)
     
- 
     #print("Predictions :", pred, '\n')
     #print ("Actual :", np.array(y_test))
     
