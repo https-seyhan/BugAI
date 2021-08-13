@@ -42,13 +42,13 @@ def getcbow(dataset):
     print("Test CBOW on the data")
     print(cbowmodel['eclipse'])
     classes = dataset['classname']
-   
+  
     for codes in classes:
         linecode = []
         tokens = codes.split('::')
         #print(tokens)
         sentences.append(tokens)
-      
+     
         for token in tokens:
             try:
                 #linecode.append(token)
