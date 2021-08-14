@@ -117,7 +117,7 @@ for i,sentence in enumerate(sentences):
         tokens_a = tokens_a[:max_len-2]
     tokens = []
     segment_ids = []
-
+    
     for token in tokens_a:
         tokens.append(token)
         segment_ids.append(SEG_ID_A)
