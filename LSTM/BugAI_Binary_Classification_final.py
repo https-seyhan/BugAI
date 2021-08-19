@@ -38,7 +38,7 @@ def getcbow(dataset):
     #Size of the word vector of a given token must be equal to embedding_dim of the LSTM model
     cbowmodel = Word2Vec(ast, min_count=1, size= embedding_dims, workers=3, window=3, sg=0)
     classes = dataset['classname']
-   
+  
     for codes in classes:
         linecode = []
         tokens = codes.split('::')
