@@ -316,6 +316,7 @@ y_predict = []
 print("***** Running evaluation *****")
 print("  Num examples ={}".format(len(val_inputs)))
 print("  Batch size = {}".format(batch_num))
+
 for step, batch in enumerate(valid_dataloader):
     batch = tuple(t.to(device) for t in batch)
     b_input_ids, b_input_mask, b_segs,b_labels = batch
