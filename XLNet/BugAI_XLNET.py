@@ -51,7 +51,6 @@ os.chdir('/home/saul/deeplearning/xlnet')
 tag2idx={'0': 0,
  '1': 1}
 tag2idx
-
 # Mapping index to name
 tag2name={tag2idx[key] : key for key in tag2idx.keys()}
 
