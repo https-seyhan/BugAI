@@ -284,4 +284,4 @@ if __name__ == '__main__':
     target = collect_expected(dataset) #Biased two classes {198, 2} lenght is 200
     #print (target)
     lstmModel(vectorised_data, target)
-   
+  
