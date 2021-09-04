@@ -103,7 +103,6 @@ def lstmModel(vectorised_data, target):
     print("X_TRAIN Reshape Completed ")
     #y_train = np.array(y_train)
     y_train = to_categorical(y_train, 2)
-
     x_test = np.reshape(x_test, (len(x_test), maxlen, embedding_dims))
     #y_test = np.array(y_test)
     y_test = to_categorical(y_test, 2)
