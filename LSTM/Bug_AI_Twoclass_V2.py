@@ -150,7 +150,7 @@ def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
               class_weight = {0 : 1. , 1: 80.},
               #class_weight={0: 1., 1: 100.},
               validation_data=(x_test, y_test, val_sample_weights))
-
+    
     history = model.fit(x_train, y_train,
               batch_size=batch_size,
               epochs=epochs,
