@@ -72,7 +72,7 @@ def pad_trunc(data, maxlen):
 def lstmModel(vectorised_data, target):
     split_point =  int(len(vectorised_data) * .8)
     print('Split Point ', split_point)
-
+    
     #split data into training and testing
     x_train = vectorised_data[:split_point]
     y_train = target[:split_point]
@@ -90,7 +90,7 @@ def lstmModel(vectorised_data, target):
     print("Number of word tokens ", maxlen)
     print("Embedding Dims ", embedding_dims)
     #print(f'Training Data {x_train[:1]}')
-    
+   
     #y_train = np.array(y_train)
     x_train = np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
     print("X_TRAIN Reshape Completed ")
