@@ -49,7 +49,7 @@ def getcbow(dataset):
         tokens = codes.split('::')
         #print(tokens)
         sentences.append(tokens)
-      
+     
         for token in tokens:
             try:
                 #linecode.append(token)
