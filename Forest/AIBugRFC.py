@@ -99,7 +99,6 @@ def RFCModel(vectorised_data, target):
     n_outliers = int(outliers_fraction * nsamples)
     print("Number of Outliners :", n_outliers)
     # create SVM model
-
     rfcmodel = RandomForestClassifier(max_depth=1, criterion= "entropy", random_state=0)
     rfcmodel.fit(x_train, y_train)
     pred = rfcmodel.predict(x_test)
