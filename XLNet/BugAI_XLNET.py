@@ -110,7 +110,7 @@ EOD_ID = tokenizer.encode("<eod>")[0]
 for i,sentence in enumerate(sentences):
     # Tokenize sentence to token id list
     tokens_a = tokenizer.encode(sentence)
-
+   
     # Trim the len of text
     if(len(tokens_a)>max_len-2):
         tokens_a = tokens_a[:max_len-2]
@@ -144,7 +144,7 @@ for i,sentence in enumerate(sentences):
     full_input_ids.append(input_ids)
     full_input_masks.append(input_mask)
     full_segment_ids.append(segment_ids)
-
+    
     if 3 > i:
         print("No.:%d"%(i))
         print("sentence: %s"%(sentence))
