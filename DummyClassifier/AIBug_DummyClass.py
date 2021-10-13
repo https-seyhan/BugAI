@@ -28,7 +28,7 @@ def convertcbow(dataset):
         linecode = []
         tokens = codes.split('::')
         sentences.append(tokens)
-     
+    
         for token in tokens:
             try:
                 linecode.append(cbowmodel[token])
@@ -92,7 +92,7 @@ def DummyModel(vectorised_data, target):
     x_test = np.reshape(x_test, (nsamples, nx * ny))
     #x_train = np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
     print("Reshape of X Test :", x_test.shape)
- 
+
     outliers_fraction =6/300
     n_outliers = int(outliers_fraction * nsamples)
     
