@@ -114,7 +114,7 @@ for i,sentence in enumerate(sentences):
     # Trim the len of text
     if(len(tokens_a)>max_len-2):
         tokens_a = tokens_a[:max_len-2]
-  
+ 
     tokens = []
     segment_ids = []
     for token in tokens_a:
