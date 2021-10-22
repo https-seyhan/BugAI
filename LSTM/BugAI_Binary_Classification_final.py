@@ -75,7 +75,7 @@ def pad_trunc(data, maxlen):
 def lstmModel(vectorised_data, target):
     split_point =  int(len(vectorised_data) * .8)
     print('Split Point ', split_point)
-   
+  
     #split data into training and testing
     x_train = vectorised_data[:split_point]
     y_train = target[:split_point]
