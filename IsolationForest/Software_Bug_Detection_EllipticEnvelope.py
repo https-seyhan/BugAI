@@ -50,7 +50,7 @@ def pad_trunc(data, maxlen):
         elif len(sample) < maxlen:
             temp = sample
             additional_elems = maxlen - len(sample)
-         
+        
             for _ in range(additional_elems):
                 temp.append(temp)
         else:
