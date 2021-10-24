@@ -117,7 +117,7 @@ def fitmodel(model, x_train, y_train, x_test, y_test, batch_size, epochs):
               batch_size=batch_size,
               epochs=epochs,
               validation_data=(x_test, y_test))
- 
+
     # model.fit(np.array(x_train), np.array(y_train),
     # batch_size = batch_size,
     # epochs =epochs,
