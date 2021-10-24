@@ -21,6 +21,7 @@ embedding_dims = 300 #300 #5 #300
 epochs = 50 #best result is with 20
 num_neurons = 150 #50
 sample_size =  998 #10
+
 #In order to maintain semantic (AST wise) cbow approach provides best results
 
 def getcbow(dataset):
