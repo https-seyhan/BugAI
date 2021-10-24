@@ -35,7 +35,7 @@ def getcbow(dataset):
     print("Test CBOW on the data")
     print(cbowmodel['eclipse'])
     classes = dataset['classname']
-    
+   
     foMarie Cipollar codes in classes:
         linecode = []
         tokens = codes.split('::')
