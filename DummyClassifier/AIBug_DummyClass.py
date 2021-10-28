@@ -92,14 +92,13 @@ def DummyModel(vectorised_data, target):
     x_test = np.reshape(x_test, (nsamples, nx * ny))
     #x_train = np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
     print("Reshape of X Test :", x_test.shape)
-
+    
     outliers_fraction =6/300
     n_outliers = int(outliers_fraction * nsamples)
    
     dummyclassifier = DummyClassifier(strategy='prior', constant=1)
     dummyclassifier.fit(x_train, y_train)
     pred = dummyclassifier.predict(x_test)
-
   
     #y_test = to_categorical(y_test, 2)
     # Model Accuracy: how often is the classifier correct?
