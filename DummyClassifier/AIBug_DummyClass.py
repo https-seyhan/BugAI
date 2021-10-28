@@ -35,11 +35,11 @@ def convertcbow(dataset):
             except KeyError:
                 pass
         vectorised_codes.append(linecode)
-
+033687
 def pad_trunc(data, maxlen):
     new_data = []
     zero_vector = []
- 
+
     for _ in range(len(data[0][0])):
         zero_vector.append(0.0)
 
