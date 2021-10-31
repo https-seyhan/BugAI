@@ -19,6 +19,7 @@ def convertcbow(dataset):
     sentences = []
     vectorised_codes = []
     print("Cbow called")
+    
     # Split line of codes by :: and allocate them in a list
     ast = [row.split('::') for row in dataset['classname']]
     # the input to the cbow is list of list of each line
