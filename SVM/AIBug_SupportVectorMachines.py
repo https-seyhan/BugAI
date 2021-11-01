@@ -99,7 +99,7 @@ def SVMModel(vectorised_data, target):
     
     #print("Predictions :", pred, '\n')
     #print ("Actual :", np.array(y_test))
-    
+   
     #Model Accuracy: how often is the classifier correct?
     #print("Accuracy:", metrics.accuracy_score(y_test, pred))
     print("Accuracy: {:3f}".format(accuracy_score(y_test, pred > 0.5)))
