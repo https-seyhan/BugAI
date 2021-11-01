@@ -28,6 +28,17 @@ A dummy classifier is a type of classifier which does not generate any insight a
 
 It is used only as a simple baseline for the other classifiers i.e. any other classifier is expected to perform better on the given dataset. It is especially useful for datasets where are sure of a class`Imbalance`. It is based on the philosophy that any analytic approach for a classification problem should be better than a random guessing approach. (https://www.geeksforgeeks.org/ml-dummy-classifiers-using-sklearn/)
 
+## EllipticEnvelope
+
+An object for detecting outliers in a Gaussian distributed dataset.
+
+One common way of performing outlier detection is to assume that the regular data come from a known distribution (e.g. data are Gaussian distributed). From this assumption, we generally try to define the “shape” of the data, and can define outlying observations as observations which stand far enough from the fit shape.
+
+The scikit-learn provides an object covariance.EllipticEnvelope that fits a robust covariance estimate to the data, and thus fits an ellipse to the central data points, ignoring points outside the central mode.
+
+For instance, assuming that the inlier data are Gaussian distributed, it will estimate the inlier location and covariance in a robust way (i.e. without being influenced by outliers). The Mahalanobis distances obtained from this estimate is used to derive a measure of outlyingness. This strategy is illustrated below.
+(https://scikit-learn.org/stable/modules/outlier_detection.html#outlier-detection)
+
 ## LSTM Networks
 
 Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies. They were introduced by Hochreiter & Schmidhuber (1997), and were refined and popularized by many people in following work.1 They work tremendously well on a large variety of problems, and are now widely used.
