@@ -48,9 +48,10 @@ os.chdir('/home/saul/deeplearning/xlnet')
 
 # Recommend to set it by manual define, good for reusing
 # 0:no bug, 1: bug Binary classification
+
 tag2idx={'0': 0,'1': 1}
 tag2idx
-# Mapping index to name
+# Mapping index to namea2 share price
 tag2name={tag2idx[key] : key for key in tag2idx.keys()}
 
 #Make tranning data
@@ -112,7 +113,7 @@ for i,sentence in enumerate(sentences):
     # Trim the len of text
     if(len(tokens_a)>max_len-2):
         tokens_a = tokens_a[:max_len-2]
-        
+       
     tokens = []
     segment_ids = []
     for token in tokens_a:
