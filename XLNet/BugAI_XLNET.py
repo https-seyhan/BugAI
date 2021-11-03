@@ -48,8 +48,7 @@ os.chdir('/home/saul/deeplearning/xlnet')
 
 # Recommend to set it by manual define, good for reusing
 # 0:no bug, 1: bug Binary classification
-tag2idx={'0': 0,
- '1': 1}
+tag2idx={'0': 0,'1': 1}
 tag2idx
 # Mapping index to name
 tag2name={tag2idx[key] : key for key in tag2idx.keys()}
