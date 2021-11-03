@@ -130,7 +130,7 @@ for i,sentence in enumerate(sentences):
     # tokens are attended to.
     input_mask = [0] * len(input_ids)
     # Zero-pad up to the sequence length at forn
-   
+  
     if len(input_ids) < max_len:
         delta_len = max_len - len(input_ids)
         input_ids = [0] * delta_len + input_ids
