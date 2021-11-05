@@ -51,7 +51,7 @@ def pad_trunc(data, maxlen):
  
     for _ in range(len(data[0][0])):
         zero_vector.append(0.0)
-     
+    
     for sample in data:
         if len(sample) > maxlen:
             temp = sample[:maxlen]
