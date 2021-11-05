@@ -89,7 +89,7 @@ def ForestModel(vectorised_data, target):
     #make each point of data of uniform lenght
     x_train = pad_trunc(x_train, maxlen)
     x_test = pad_trunc(x_test, maxlen)
-    
+   
     nsamples, nx, ny = array(x_train).shape
     x_train = np.reshape(x_train, (nsamples, nx * ny))
     nsamples, nx, ny = array(x_test).shape
