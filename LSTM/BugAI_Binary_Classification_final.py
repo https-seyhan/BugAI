@@ -90,7 +90,7 @@ def lstmModel(vectorised_data, target):
     print(f' Training data Size: {len(x_train)}')
     print("Number of word tokens ", maxlen)
     print("Embedding Dims ", embedding_dims)
-    
+   
     #print(f'Training Data {x_train[:1]}')
     #print(type(x_train))
     #y_train = np.array(y_train)
