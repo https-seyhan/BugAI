@@ -15,7 +15,7 @@ from keras.utils import to_categorical
 from sklearn.utils import compute_sample_weight
 from sklearn.utils import compute_class_weight
 
-#The objective iof this model is to predict if there is critical bug in a given AST code using LSTM
+#The objective of this model is to predict if there is critical bug in a given AST code using LSTM
 #This model does not use pre-trainined embeddings since there is no tra-preined weight vectors are available.
 #Therefore, embedding modules is excluded in the LSTM architecture.
 #This model uses keras for LSTM modelling.
