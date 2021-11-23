@@ -50,7 +50,7 @@ def getcbow(dataset):
                 linecode.append(cbowmodel[token])
             except KeyError:
                 pass
-        vectorised_codes. append(linecode)
+        vectorised_codes. append(linprint("Cbow called")ecode)
     return vectorised_codes
 
 def pad_trunc(data, maxlen):
@@ -58,7 +58,7 @@ def pad_trunc(data, maxlen):
     zero_vector = []
     for _ in range(len(data[0][0])):
         zero_vector.append(0.0)
-
+        
     for sample in data:
         if len(sample) > maxlen:
             temp = sample[:maxlen]
