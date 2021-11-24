@@ -85,7 +85,7 @@ def CovModel(vectorised_data, target):
     x_test = pad_trunc(x_test, maxlen)
     nsamples, nx, ny = array(x_train).shape
     x_train = np.reshape(x_train, (nsamples, nx * ny))
-    #x_train = np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
+    
     nsamples, nx, ny = array(x_test).shape
     print("x_test shapes :", nsamples, nx, ny)
     x_test = np.reshape(x_test, (nsamples, nx * ny))
