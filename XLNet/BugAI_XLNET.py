@@ -153,7 +153,7 @@ for i,sentence in enumerate(sentences):
         print("attention_masks:%s"%(input_mask))
         print("segment_ids:%s"%(segment_ids))
         print("\n")
-     
+    
 #Set label embedding
 # Make label into id
 tags = [tag2idx[str(lab)] for lab in labels]
