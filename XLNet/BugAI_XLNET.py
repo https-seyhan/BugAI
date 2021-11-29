@@ -250,7 +250,7 @@ print("  Num steps = %d"%(num_train_optimization_steps))
 for _ in trange(epochs,desc="Epoch"):
     tr_loss = 0
     nb_tr_examples, nb_tr_steps = 0, 0
-
+    
     for step, batch in enumerate(train_dataloader):
         # add batch to gpu
         batch = tuple(t.to(device) for t in batch)
