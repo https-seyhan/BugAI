@@ -324,6 +324,7 @@ for step, batch in enumerate(valid_dataloader):
     with torch.no_grad():
         outputs = model(input_ids =b_input_ids,token_type_ids=b_segs, input_mask = b_input_mask,labels=b_labels)
         tmp_eval_loss, logits = outputs[:2]
+        
     # Get textclassification predict result
     logits = logits.detach().cpu().numpy()
     label_ids = b_labels.to('cpu').numpy()
