@@ -332,6 +332,7 @@ for step, batch in enumerate(valid_dataloader):
 #     print(tmp_eval_accuracy)
 #     print(np.argmax(logits, axis=1))
 #     print(label_ids)
+
 #     Save predict and real label results for analyze
     for predict in np.argmax(logits, axis=1):
         y_predict.append(predict)
