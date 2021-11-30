@@ -24,7 +24,7 @@ def convertcbow(dataset):
     # size of the word vector of a given token must be equal to embedding_dim of the LocalOutlierFactor model
     cbowmodel = Word2Vec(ast, min_count=1, size=embedding_dims, workers=3, window=6, sg=0)
     print(' CBOW model ', cbowmodel)
-
+    
     # Test cbow model 
     classes = dataset['classname']
     for codes in classes:
