@@ -64,7 +64,7 @@ def collect_expected(dataset):
         expected.append(bug)
     return expected
 
-def getDataset():
+def get_Dataset():
     dataset = pd.read_csv('bug-metrics.csv', sep= ',')
     return dataset
 
