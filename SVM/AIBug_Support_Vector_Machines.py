@@ -109,7 +109,7 @@ def SVMModel(vectorised_data, target):
     print(classification_report(y_test, pred))
 
 if __name__ == '__main__':
-    dataset = getDataset()
+    dataset = get_Dataset()
     vectorised_data = convertcbow(dataset)
     print(f'Vectorised Data Type {type(vectorised_data)}')
     target = collect_expected(dataset)  # Biased two classes {198, 2} lenght is 200
