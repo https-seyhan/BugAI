@@ -94,7 +94,7 @@ def SVMModel(vectorised_data, target):
     # create SVM model
     #svmmodel = svm.SVC(kernel='poly', degree=8)
     #svmmodel = svm.SVC(kernel='sigmoid')
-    one_class_svmmodel = svm.OneClassSVM(nu=0.03, kernel="rbf", gamma=0.02)
+    one_class_svm_model = svm.OneClassSVM(nu=0.03, kernel="rbf", gamma=0.02)
     svmmodel.fit(x_train, y_train)
     pred = svmmodel.predict(x_test)
     
