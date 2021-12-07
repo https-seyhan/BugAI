@@ -28,7 +28,7 @@ def convertcbow(dataset):
     print(' CBOW model ', cbowmodel)
     classes = dataset['classname']
    
-31
+
     for codes in class
     for codes in classes:
         linecode = []
