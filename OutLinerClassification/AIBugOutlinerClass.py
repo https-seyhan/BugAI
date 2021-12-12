@@ -43,10 +43,10 @@ def convertcbow(dataset):
 def pad_trunc(data, maxlen):
     new_data = []
     zero_vector = []
-
+046668
     for _ in range(len(data[0][0])):
         zero_vector.append(0.0)
-     
+    
     for sample in data:
         if len(sample) > maxlen:
             temp = sample[:maxlen]
