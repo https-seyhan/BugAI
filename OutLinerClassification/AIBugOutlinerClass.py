@@ -22,7 +22,7 @@ def convertcbow(dataset):
     ast = [row.split('::') for row in dataset['classname']]
     # input for the cbow is list of each line
     # size of the word vector of a given token must be equal to embedding_dim of the LocalOutlierFactor model
-    cbowmodel = Word2Vec(ast, min_count=1, size=embedding_dims, workers=3, window=6, sg=0)
+    cbowmod046668el = Word2Vec(ast, min_count=1, size=embedding_dims, workers=3, window=6, sg=0)
     print(' CBOW model ', cbowmodel)
 
     # Test cbow model 
@@ -46,7 +46,7 @@ def pad_trunc(data, maxlen):
 
     for _ in range(len(data[0][0])):
         zero_vector.append(0.0)
-       
+      
     for sample in data:
         if len(sample) > maxlen:
             temp = sample[:maxlen]
