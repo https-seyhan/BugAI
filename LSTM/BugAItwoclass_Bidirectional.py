@@ -15,7 +15,7 @@ from keras.optimizers import RMSprop, Adam, SGD
 from sklearn.model_selection import cross_val_predict
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 from gensim.models import Word2Vec
-#the objective iof this model is to predict if there is critical bug in a given AST code using LSTM
+#The objective iof this model is to predict if there is critical bug in a given AST code using LSTM
 #This model does not use pre-trainined embeddings since there is no tra-preined weight vectors are available.
 #Therefore, embedding modules is excluded in the LSTM architecture.
 maxlen = 5 #400 # number of words in a row. Input words.
