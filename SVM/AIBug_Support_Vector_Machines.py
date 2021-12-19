@@ -1,6 +1,6 @@
 import  pandas as pd
 import numpy as np
-from sklearn import svm
+from sklearn import svmfrom sklearn import metrics
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 
@@ -20,7 +20,7 @@ def convert_to_cbow(dataset):
     #The input to the cbow is list of list of each line
     cbowmodel = Word2Vec(ast, min_count=1, size=embedding_dims, workers=3, window=3, sg=0)
     classes = dataset['classname']
- 
+
     for codes in classes:
         linecode = []
         tokens = codes.split('::')
