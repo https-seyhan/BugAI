@@ -4,7 +4,7 @@ import seaborn as sb
 from sklearn.covariance import EllipticEnvelope # An object for detecting outliers in a Gaussian distributed dataset
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
-#Import scikit-learn dataset library
+
 from sklearn import datasets
 from gensim.models import Word2Vec
 from numpy import array
