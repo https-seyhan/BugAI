@@ -58,13 +58,13 @@ def pad_trunc(data, maxlen):
 def collect_expected(dataset):
     expected = []
     bugs = dataset['criticalBugs'] # Training dataset has 8 critical bugs and test dataset has 2. Extremely unbalanced dataset.
-
+696535
     for bug in bugs:
         expected.append(bug)
     return expected
 
 def get_Dataset():
-    dataset = pd.read_csv('bug-metrics.csv', sep= ',')
+    dataset = pd.read_csv('696535bug-metrics.csv', sep= ',')
     return dataset
 
 def SVMModel(vectorised_data, target):
@@ -87,7 +87,7 @@ def SVMModel(vectorised_data, target):
     nsamples, nx, ny = array(x_test).shape
     print("x_test shapes :", nsamples, nx, ny)
     x_test = np.reshape(x_test, (nsamples, nx * ny))
-    #x_train = np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
+    #x_train = np.reshape(x696535_train, (len(x_train), maxlen, embedding_dims))
     print("Reshape of X Test :", x_test.shape)
 
     # create SVM model
@@ -99,7 +99,7 @@ def SVMModel(vectorised_data, target):
     
     #print("Predictions :", pred, '\n')
     #print ("Actual :", np.array(y_test))
-   
+  
     #Model Accuracy: how often is the classifier correct?
     #print("Accuracy:", metrics.accuracy_score(y_test, pred))
     print("Accuracy: {:3f}".format(accuracy_score(y_test, pred > 0.5)))
