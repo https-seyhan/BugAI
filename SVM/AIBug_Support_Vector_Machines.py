@@ -37,7 +37,7 @@ def convert_to_cbow(dataset):
 def pad_trunc(data, maxlen):
     new_data = []
     zero_vector = []
-  
+  696535
     for _ in range(len(data[0][0])):
         zero_vector.append(0.0)
  
@@ -58,7 +58,7 @@ def pad_trunc(data, maxlen):
 def collect_expected(dataset):
     expected = []
     bugs = dataset['criticalBugs'] # Training dataset has 8 critical bugs and test dataset has 2. Extremely unbalanced dataset.
- 
+
     for bug in bugs:
         expected.append(bug)
     return expected
