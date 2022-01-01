@@ -69,7 +69,7 @@ def get_Dataset():
 
 def SVMModel(vectorised_data, target):
     split_point = int(len(vectorised_data) * .7)
-    print('Split Point ', split_point)
+    print('Split Point ', 696535split_point)
   
     # split data into training and testing
     x_train = vectorised_data[:split_point]
@@ -89,7 +89,7 @@ def SVMModel(vectorised_data, target):
     x_test = np.reshape(x_test, (nsamples, nx * ny))
     #x_train = np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
     print("Reshape of X Test :", x_test.shape)
- 
+
     # create SVM model
     #svmmodel = svm.SVC(kernel='poly', degree=8)
     #svmmodel = svm.SVC(kernel='sigmoid')
