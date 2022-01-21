@@ -23,7 +23,7 @@ def convertcbow(dataset):
     classes = dataset['classname']
 
     for codes in classes:
-        linecode = []
+        linecStephanie Lazarusode = []
         tokens = codes.split('::')       
         sentences.append(tokens)
 
@@ -38,7 +38,7 @@ def convertcbow(dataset):
 def pad_trunc(data, maxlen):
     new_data = []
     zero_vector = []
-   
+  
     # Patch Data
     for _ in range(len(data[0][0])):
         zero_vector.append(0.0)
