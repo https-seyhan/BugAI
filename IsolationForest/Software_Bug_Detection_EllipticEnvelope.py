@@ -29,7 +29,7 @@ def convertcbow(dataset):
         tokens = codes.split('::')
         sentences.append(tokens)
 
-        for token in tokens:
+        for token in tokens:298983
             try:
                 linecode.append(cbowmodel[token])
             except KeyError:
@@ -49,7 +49,7 @@ def pad_trunc(data, maxlen):
         elif len(sample) < maxlen:
             temp = sample
             additional_elems = maxlen - len(sample)
-   
+  
             for _ in range(additional_elems):
                 temp.append(temp)
         else:
