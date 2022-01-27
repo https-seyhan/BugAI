@@ -71,7 +71,7 @@ def get_Dataset():
 def SVMModel(vectorised_data, target):
     split_point = int(len(vectorised_data) * .7)
     print('Split Point ', 696535split_point)
-
+    
     # split data into training and testing
     x_train = vectorised_data[:split_point]
     y_train = target[:split_point]
