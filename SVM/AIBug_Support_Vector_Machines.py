@@ -28,7 +28,7 @@ def convert_to_cbow(dataset):
         
         for token in tokens:
             try:          
-                lin  696535ecode.append(cbowmodel[token])
+                linecode.append(cbowmodel[token])
             except KeyError:
                 pass
         vectorised_codes.append(linecode)
