@@ -33,7 +33,7 @@ def convert_to_cbow(dataset):
                 pass
         vectorised_codes.append(linecode)
     return vectorised_codes
-  696535
+
 def pad_trunc(data, maxlen):
     new_data = []
     zero_vector = []
