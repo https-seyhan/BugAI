@@ -112,7 +112,7 @@ EOD_ID = tokenizer.encode("<eod>")[0]
 for i,sentence in enumerate(sentences):
     # Tokenize sentence to token id list
     tokens_a = tokenizer.encode(sentence)
-
+    
     # Trim the len of text
     if(len(tokens_a)>max_len-2):
         tokens_a = tokens_a[:max_len-2]
