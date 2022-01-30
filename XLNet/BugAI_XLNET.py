@@ -139,7 +139,7 @@ for i,sentence in enumerate(sentences):
         input_ids = [0] * delta_len + input_ids
         input_mask = [1] * delta_len + input_mask
         segment_ids = [SEG_ID_PAD] * delta_len + segment_ids
-    
+   
     assert len(input_ids) == max_len
     assert len(input_mask) == max_len
     assert len(segment_ids) == max_len
