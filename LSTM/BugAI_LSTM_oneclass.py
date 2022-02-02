@@ -23,7 +23,6 @@ num_neurons = 150 #50
 sample_size =  998 #10
 
 #In order to maintain semantics (structure) (AST wise) cbow approach provides best results
-
 def getcbow(dataset):
     sentences = []
     vectorised_codes = []
