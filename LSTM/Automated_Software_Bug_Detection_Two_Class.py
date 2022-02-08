@@ -114,7 +114,6 @@ def lstmModel(vectorised_data, target):
     #model.add(Dense(2, activation='relu'))
     #model.add(Dense(2, activation='sigmoid'))  # one class
     model.add(LSTM(num_neurons, return_sequences=True, input_shape=(maxlen , embedding_dims))) #stack LSTMs
-
     model.add(Dropout(.2))
     model.add(Flatten()) # dense layer expects a flat vectors of n elements
     #model.add(Dense(1, activation='relu')) # one class
