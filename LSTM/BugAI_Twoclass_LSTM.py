@@ -20,7 +20,7 @@ from sklearn.utils import compute_class_weight
 #This model does not use pre-trainined embeddings since there is no tra-preined weight vectors are available.
 #Therefore, embedding modules is excluded in the LSTM architecture.
 
-# NLP
+# NLP parameters
 maxlen = 5 #400 # number of words in a row. Input words.
 batch_size = 32 #32
 embedding_dims = 50 #300 #5 #300
