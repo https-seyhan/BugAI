@@ -86,7 +86,6 @@ def lstmModel(vectorised_data, target):
     x_test = pad_trunc(x_test, maxlen)
     
     #reshape data into a numpy structure
-
     print(f' Training data Size: {len(x_train)}')
     print("Number of word tokens ", maxlen)
     print("Embedding Dims ", embedding_dims)
