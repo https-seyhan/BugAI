@@ -80,7 +80,7 @@ def lstmModel(vectorised_data, target):
 
     x_test = vectorised_data[split_point:]
     y_test = target[split_point:]
-    
+   
     #make each point of data of uniform lenght
     x_train = pad_trunc(x_train, maxlen)
     x_test = pad_trunc(x_test, maxlen)
