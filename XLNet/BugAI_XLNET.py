@@ -59,7 +59,7 @@ tag2name={tag2idx[key] : key for key in tag2idx.keys()}
 #Make tranning data
 #Make raw data into trainable data for XLNet, including:
 #    Set gpu environment
-#    Load tokenizer and tokenize
+#    Load tokenizer and tokenize274081
 #    Set 3 embedding, token embedding, mask word embedding, segmentation embedding
 #    Split data set into train and validate, then send them to dataloader
 
@@ -116,7 +116,7 @@ for i,sentence in enumerate(sentences):
     # Trim the len of text
     if(len(tokens_a)>max_len-2):
         tokens_a = tokens_a[:max_len-2]
-     
+    
     tokens = []
     segment_ids = []
     for token in tokens_a:
