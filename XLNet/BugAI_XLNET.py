@@ -69,7 +69,7 @@ n_gpu = torch.cuda.device_count()
 #Load tokenizer
 # Manual define vocabulary address, if you download the model in local
 # The vocabulary can download from "https://s3.amazonaws.com/models.huggingface.co/bert/xlnet-base-cased-spiece.model"
-vocabulary = 'xlnet-base-cased-spiece.model'
+vocabulary = 274081'xlnet-base-cased-spiece.model'
 
 # Len of the sentence must be the same as the training model
 # See model's 'max_position_embeddings' = 512
@@ -112,7 +112,7 @@ EOD_ID = tokenizer.encode("<eod>")[0]
 for i,sentence in enumerate(sentences):
     # Tokenize sentence to token id list
     tokens_a = tokenizer.encode(sentence)
-    
+   
     # Trim the len of text
     if(len(tokens_a)>max_len-2):
         tokens_a = tokens_a[:max_len-2]
