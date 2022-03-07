@@ -45,7 +45,7 @@ def convertcbow(dataset):
         vectorised_codes.append(linecode)
     return vectorised_codes
 
-# Append zeros to the end of the sentences if the sentences are short
+#Append zeros to the end of the sentences if the sentences are short
 def pad_trunc(data, maxlen):
     new_data = []
     zero_vector = []
