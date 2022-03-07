@@ -95,7 +95,7 @@ def CovModel(vectorised_data, target):
     covmodel = EllipticEnvelope(contamination=0.4)
     covmodel.fit(x_train, y_train)
     pred = covmodel.predict(x_test)
-
+    
     # Model Accuracy: how often is the classifier correct?
     print("Accuracy: {:3f}".format(accuracy_score(y_test, pred > 0.5)))
     # print("Confusion matrix:\n{}".format(confusion_matrix(y_test.argmax(axis=1), pred.argmax(axis=1))))
