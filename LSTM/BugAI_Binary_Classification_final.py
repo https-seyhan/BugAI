@@ -72,6 +72,7 @@ def pad_trunc(data, maxlen):
     return new_data
 
 def lstmModel(vectorised_data, target):
+    
     split_point =  int(len(vectorised_data) * .8)
     print('Split Point ', split_point)
    
