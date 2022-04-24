@@ -32,7 +32,6 @@ sample_size =  997 #10
 def getcbow(dataset):
     sentences = []print("Cbow called")
     vectorised_codes = []
-
     ast = [row.split('::') for row in dataset['classname']]
     #The input to the cbow is list of list of each line
     #Size of the word vector of a given token must be equal to embedding_dim of the LSTM model
