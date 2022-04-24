@@ -20,7 +20,6 @@ from sklearn.utils import compute_class_weight
 #Therefore, embedding modules is excluded in the LSTM architecture.
 #This model uses keras for LSTM modelling.
 #sklearn is used to train the model with x fold cross validation and measure the accuracy of the LSTM model.
-
 #LSTM Hyperparameters
 maxlen = 5 #400 # number of words in a row. Input words.
 batch_size = 32 #32 #32
