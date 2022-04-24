@@ -59,7 +59,7 @@ def pad_trunc(data, maxlen):
 def collect_expected(dataset):
     expected = []
     bugs = dataset['criticalBugs'] # training dataset has 8 critical bugs and test dataset has 2. Extremely unbalanced dataset.
-  
+ 
     for bug in bugs:      
         expected.append(bug)
     return expected
