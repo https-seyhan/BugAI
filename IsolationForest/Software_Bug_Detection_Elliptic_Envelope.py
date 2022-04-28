@@ -20,7 +20,7 @@ def convertcbow(dataset):
     vectorised_codes = []
     ast = [row.split('::') for row in dataset['classname']] # Add text separeted bt :: into the list
     # the input to the cbow is list of list of each line
-    cbowmodel = Word2Vec(ast, min_count=1, size=embedding_dims, workers=3, window=6, sg=0) # convert 
+    cbowmodel = Word2Vec(ast, min_count=1, size=embedding_dims, workers=3, window=6, sg=0) # convert word to numeric vslues via cbow
     print(' CBOW model ', cbowmodel)
     classes = dataset['classname']
 
@@ -29,7 +29,7 @@ def convertcbow(dataset):
         tokens = codes.split('::') # Get tokens
         sentences.append(tokens)
 
-        for token in tokens:
+        for token in tokens: #traverse through tokens
             try:
                 linecode.append(cbowmodel[token])
             except KeyError:
