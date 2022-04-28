@@ -3,7 +3,7 @@ import numpy as np
 from sklearn import svm # SVM from sklearn
 from sklearn import metrics
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
+from sklearn.metrics import confusion_matrix, accuracy_score, classification_report #
 
 #Import scikit-learn dataset library
 from sklearn import datasets
