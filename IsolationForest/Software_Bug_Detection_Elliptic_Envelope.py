@@ -7,7 +7,7 @@ from sklearn.metrics import confusion_matrix, accuracy_score, classification_rep
 from sklearn import metrics
 #Import scikit-learn dataset library
 from sklearn import datasets
-from gensim.models import Word2Vec
+from gensim.models import Word2Vec #convert words to vectors
 from numpy import array
 from keras.utils import to_categorical
 from matplotlib import pyplot as plt
