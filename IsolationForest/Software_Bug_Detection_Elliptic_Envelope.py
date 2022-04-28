@@ -3,7 +3,7 @@ import numpy as np
 import seaborn as sb
 from sklearn.covariance import EllipticEnvelope # Isolation Forest Module in Python
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
+from sklearn.metrics import confusion_matrix, accuracy_score, classification_report # model quality modules
 from sklearn import metrics
 #Import scikit-learn dataset library
 from sklearn import datasets
