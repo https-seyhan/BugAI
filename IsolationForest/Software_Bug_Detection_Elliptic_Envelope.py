@@ -31,7 +31,7 @@ def convertcbow(dataset):
 
         for token in tokens: #traverse through tokens
             try:
-                linecode.append(cbowmodel[token])
+                linecode.append(cbowmodel[token]) # send token to cbow model
             except KeyError:
                 pass
     
