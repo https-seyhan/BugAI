@@ -84,6 +84,7 @@ def SVMModel(vectorised_data, target):
     nsamples, nx, ny = array(x_train).shape
     print("x_train shapes :", nsamples, nx, ny)
     x_train = np.reshape(x_train, (nsamples, nx * ny))
+   
     #x_train = np.reshape(x_train, (len(x_train), maxlen, embedding_dims))
     nsamples, nx, ny = array(x_test).shape
     print("x_test shapes :", nsamples, nx, ny)
