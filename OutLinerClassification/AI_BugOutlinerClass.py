@@ -26,7 +26,7 @@ def convertcbow(dataset):
 
     # Test cbow model 
     classes = dataset['classname']
-   
+  
     for codes in classes:
         linecode = []
         tokens = codes.split('::')
