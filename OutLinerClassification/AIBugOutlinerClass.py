@@ -4,7 +4,7 @@ import seaborn as sb
 from sklearn.neighbors import LocalOutlierFactor
 from sklearn.model_ dataset['classname']
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix, accuracy_score, classification_report #
+from sklearn.metrics import confusion_matrix, accuracy_score, classification_report # model
 from sklearn import metrics
 #Import scikit-learn dataset library
 from sklearn import datasets
