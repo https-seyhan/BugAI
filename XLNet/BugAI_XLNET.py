@@ -69,7 +69,6 @@ n_gpu = torch.cuda.device_count()
 # Manual define vocabulary address, if you download the model in local
 # The vocabulary can download from "https://s3.amazonaws.com/models.huggingface.co/bert/xlnet-base-cased-spiece.model"
 vocabulary = 'xlnet-base-cased-spiece.model'
-
 # Len of the sentence must be the same as the training model
 # See model's 'max_position_embeddings' = 512
 #max_len  = 64
