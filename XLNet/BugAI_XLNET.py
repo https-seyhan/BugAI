@@ -26,7 +26,6 @@ os.chdir('/home/saul/bugpred')
 data_file_address = "bug-metrics.csv"
 #df_data = pd.read_csv(data_file_address,sep=",",encoding="utf-8",names=['labels','texts'])
 df_data = pd.read_csv(data_file_address,sep=",",encoding="utf-8")
-
 df_data.criticalBugs.head(n=2)
 df_data.criticalBugs.unique()
 
