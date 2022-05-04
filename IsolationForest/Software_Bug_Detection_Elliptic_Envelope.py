@@ -26,7 +26,7 @@ def convertcbow(dataset):
     classes = dataset['classname']
     for codes in classes:
         linecode = []
-        tokens = codes.split('::') # Get tokens
+        tokens = codes.split('::') #Get tokens
         sentences.append(tokens) #Add tokens to sentences list
         
         for token in tokens: #traverse through tokens
