@@ -41,7 +41,7 @@ def convertcbow(dataset):
 
 def pad_trunc(data, maxlen):
     new_data = []
-    zero_vector = [] # keep 
+    zero_vector = [] # keep zero vectors
     for _ in range(len(data[0][0])):
         zero_vector.append(0.0)
 
