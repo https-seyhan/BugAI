@@ -20,7 +20,7 @@ def convertcbow(dataset):
     # the input to the cbow is list of list of each line
     cbowmodel = Word2Vec(ast, min_count=1, size=embedding_dims, workers=3, window=6, sg=0)
     print(' CBOW model ', cbowmodel)
-   
+  
     classes = dataset['classname']
     for codes in classes:
         linecode = []
