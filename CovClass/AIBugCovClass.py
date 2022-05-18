@@ -16,6 +16,7 @@ embedding_dims = 6 #300 #5 #300
 
 # convert text to vectors for
 def convertcbow(dataset):
+    
     sentences = []
     vectorised_codes = []
     ast = [row.split('::') for row in dataset['classname']] # split
