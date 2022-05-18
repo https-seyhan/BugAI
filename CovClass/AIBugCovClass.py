@@ -87,7 +87,7 @@ def CovModel(vectorised_data, target):
     nsamples, nx, ny = array(x_test).shape
     print("x_test shapes :", nsamples, nx, ny)
     x_test = np.reshape(x_test, (nsamples, nx * ny))
-   
+  
     outliers_fraction =6/300
     n_outliers = int(outliers_fraction * nsamples)
     print("Number of Outliners :", n_outliers)
