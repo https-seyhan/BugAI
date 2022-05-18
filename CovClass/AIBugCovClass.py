@@ -13,7 +13,7 @@ from matplotlib import pyplot as plt
 maxlen = 5 #400 # number of words in a row. Input words.
 embedding_dims = 6 #300 #5 #300
 
-# convert
+# convert text
 def convertcbow(dataset):
     sentences = []
     vectorised_codes = []
