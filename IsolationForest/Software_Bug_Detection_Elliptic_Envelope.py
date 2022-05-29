@@ -44,7 +44,6 @@ def pad_trunc(data, maxlen):
     zero_vector = [] # keep zero vectors
     for _ in range(len(data[0][0])):
         zero_vector.append(0.0)
-
     for sample in data:
        
         if len(sample) > maxlen:
